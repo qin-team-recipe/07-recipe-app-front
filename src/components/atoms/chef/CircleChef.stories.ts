@@ -15,5 +15,6 @@ export const Primary: Story = {
   args: {
     icon: "https://picsum.photos/200",
     name: "山田シェフ",
+    url: "/",
   },
 }
