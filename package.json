@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -48,6 +49,16 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-storybook": "^0.6.12",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "storybook": "^7.0.18"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*": [
+      "prettier --write"
+    ]
   }
 }
