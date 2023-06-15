@@ -1,22 +1,24 @@
+import Image from "next/image";
+
+import { TextButton } from "@/components/atoms/TextButton/TextButton";
+
 interface MyReceipeHeaderProps {
   close: () => void;
   draft: () => void;
   create: () => void;
+  isEdited: boolean
 }
 
 /**
  * マイレシピ作成時ヘッダー
- * 
  */
-export const MyReceipeHeader = ({ close, draft, create }: MyReceipeHeaderProps) => {
+export const MyReceipeHeader = ({ close, draft, create, isEdited }: MyReceipeHeaderProps) => {
   return (
-    <div className="flex justify-between items-center bg-[#F9F8F9] py-[12px] px-[16px]  border-0 border-b border-solid border-[#E4E2E4]">
-      <div className="text-[24px] cursor-pointer" onClick={close}>
-        ×
-      </div>
+    <div className="flex justify-between items-center bg-Mauve-01 py-[12px] px-[16px] max-w-[480px]">
+      <Image src="/assets/closeButton.svg" className="cursor-pointer" width={24} height={24} alt="closeButton" onClick={close} />
       <div className="flex items-center">
-        <p className="text-[16px]  text-[#020010] font-bold font-sans opacity-60 mx-[8px] my-0 cursor-pointer" onClick={draft}>下書き</p>
-        <p className="text-[16px]  text-[#E54D2E] font-bold font-sans mx-[8px] my-0 cursor-pointer" onClick={create}>作成する</p>
+        <TextButton innerText="下書き" primary={false} onClick={draft} diabled={isEdited} />
+        <TextButton innerText="作成" primary={true} onClick={create} />
       </div>
     </div>
   );

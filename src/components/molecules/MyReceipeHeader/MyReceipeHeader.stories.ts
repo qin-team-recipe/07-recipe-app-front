@@ -11,4 +11,14 @@ const meta: Meta<typeof MyReceipeHeader> = {
 export default meta
 type Story = StoryObj<typeof MyReceipeHeader>
 
-export const Primary: Story = {}
+export const Primary: Story = {
+  args: {
+    isEdited: false,
+  },
+}
+
+export const Secondary: Story = {
+  args: {
+    isEdited: true,
+  },
+}
