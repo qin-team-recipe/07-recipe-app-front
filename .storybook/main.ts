@@ -1,4 +1,5 @@
 import type { StorybookConfig } from "@storybook/nextjs"
+const path = require("path")
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
@@ -22,5 +23,15 @@ const config: StorybookConfig = {
     autodocs: "tag",
   },
   staticDirs: ["../public"],
+  webpackFinal: async (config) => {
+    // storybookでaliasを使うための設定
+    if (config.resolve) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        "@": path.resolve(__dirname, "../src"),
+      }
+    }
+    return config
+  },
 }
 export default config
