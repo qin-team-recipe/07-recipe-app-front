@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 interface CircleChefProps {
-  icon: string;
-  name: string;
-  url: string;
+  icon: string
+  name: string
+  url: string
 }
 
 export const CircleChef = (props: CircleChefProps) => {
@@ -15,5 +15,5 @@ export const CircleChef = (props: CircleChefProps) => {
       </div>
       <p className="text-[12px] mt-1">{props.name}</p>
     </Link>
-  );
+  )
 }
