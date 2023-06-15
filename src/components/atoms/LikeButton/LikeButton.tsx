@@ -18,14 +18,14 @@ export const LikeButton = ({ isLiked }: LikeButtonProps) => {
   }
   return state ? (
     <>
-      <ThemeIcon radius="xl" size="xl" className="bg-Tomato-12" onClick={turnOffLike}>
-        <Image src="heart.svg" alt="ライク" width={20} height={20}></Image>
+      <ThemeIcon radius="xl" size="xl" className="bg-Tomato-12 w-[60px] h-[60px]" onClick={turnOffLike}>
+        <Image src="heart.svg" alt="ライク" width={36} height={36}></Image>
       </ThemeIcon>
     </>
   ) : (
     <>
-      <ThemeIcon radius="xl" size="xl" className="bg-Mauve-10" onClick={turnOnLike}>
-        <Image src="heart.svg" alt="ライク" width={20} height={20}></Image>
+      <ThemeIcon radius="xl" size="xl" className="bg-Mauve-10 w-[60px] h-[60px]" onClick={turnOnLike}>
+        <Image src="heart.svg" alt="ライク" width={36} height={36}></Image>
       </ThemeIcon>
     </>
   )
