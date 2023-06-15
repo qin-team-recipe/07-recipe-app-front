@@ -8,7 +8,7 @@ interface RecipePreviewPictureProps {
 export const RecipePreviewPicture = ({ index, url }: RecipePreviewPictureProps) => {
   return (
     <>
-      <Image className="w-[160px] " src={url} alt={`レシピ画像${index}`}></Image>
+      <Image width={"160px"} height={"160px"} src={url} alt={`レシピ画像${index}`}></Image>
     </>
   )
 }
