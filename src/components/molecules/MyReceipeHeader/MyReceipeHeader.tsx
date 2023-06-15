@@ -25,7 +25,7 @@ export const MyReceipeHeader = ({ close, draft, create, isExistDraft, isEditing 
         onClick={close}
       />
       <div className="flex items-center">
-        {isExistDraft && <TextButton innerText="下書き" primary={false} onClick={draft} />}
+        {isExistDraft && !isEditing && <TextButton innerText="下書き" primary={false} onClick={draft} />}
         <TextButton innerText="作成する" primary={true} onClick={create} disabled={!isEditing} />
       </div>
     </div>
