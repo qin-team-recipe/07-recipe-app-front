@@ -15,6 +15,7 @@ export const Primary: Story = {
   args: {
     primary: true,
     innerText: "作成する",
+    disabled: false,
   },
 }
 
@@ -22,13 +23,23 @@ export const Secondary: Story = {
   args: {
     primary: false,
     innerText: "下書き",
+    disabled: false,
   },
 }
 
-export const tertiary: Story = {
+export const Primary_and_Disabled: Story = {
+  args: {
+    primary: true,
+    innerText: "作成する",
+    disabled: true,
+  },
+}
+
+// これは実際に使われることはないかも
+export const Secondary_and_Disabled: Story = {
   args: {
     primary: false,
     innerText: "下書き",
-    diabled: true,
+    disabled: true,
   },
 }

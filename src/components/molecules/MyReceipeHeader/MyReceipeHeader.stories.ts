@@ -11,14 +11,30 @@ const meta: Meta<typeof MyReceipeHeader> = {
 export default meta
 type Story = StoryObj<typeof MyReceipeHeader>
 
-export const Primary: Story = {
+export const 下書きレシピあり_入力あり: Story = {
   args: {
-    isEdited: false,
+    isExistDraft: true,
+    isEditing: true,
   },
 }
 
-export const Secondary: Story = {
+export const 下書きレシピあり_入力なし: Story = {
   args: {
-    isEdited: true,
+    isExistDraft: true,
+    isEditing: false,
+  },
+}
+
+export const 下書きレシピなし_入力あり: Story = {
+  args: {
+    isExistDraft: false,
+    isEditing: true,
+  },
+}
+
+export const 下書きレシピなし_入力なし: Story = {
+  args: {
+    isExistDraft: false,
+    isEditing: false,
   },
 }
