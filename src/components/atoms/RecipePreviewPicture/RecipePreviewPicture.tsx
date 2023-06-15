@@ -1,0 +1,14 @@
+import { Image } from "@mantine/core"
+
+interface RecipePreviewPictureProps {
+  index: number
+  url: string
+}
+
+export const RecipePreviewPicture = ({ index, url }: RecipePreviewPictureProps) => {
+  return (
+    <>
+      <Image className="w-[160px] " src={url} alt={`レシピ画像${index}`}></Image>
+    </>
+  )
+}
