@@ -3,7 +3,7 @@ import { RecipePreviewCard } from "./RecipePreviewCard"
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof RecipePreviewCard> = {
-  title: "Atoms/RecipePreviewCard",
+  title: "Molecules/RecipePreviewCard",
   component: RecipePreviewCard,
   tags: ["autodocs"],
 }

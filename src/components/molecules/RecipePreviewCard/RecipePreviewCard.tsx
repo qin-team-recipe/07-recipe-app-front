@@ -1,7 +1,7 @@
 import Link from "next/link"
 
-import { RecipePreviewPicture } from "../atoms/RecipePreviewPicture/RecipePreviewPicture"
-import { RecipePreviewText } from "../atoms/RecipePreviewText/RecipePreviewText"
+import { RecipePreviewPicture } from "../../atoms/RecipePreviewPicture/RecipePreviewPicture"
+import { RecipePreviewText } from "../../atoms/RecipePreviewText/RecipePreviewText"
 
 interface RecipePreviewCardProps {
   recipe: {
@@ -23,3 +23,4 @@ export const RecipePreviewCard = ({ recipe }: RecipePreviewCardProps) => {
   )
 }
 //TODO: ボタン押下時の処理
+//TODO: Likeの数を表示するコンポーネントを追加する
