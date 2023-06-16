@@ -11,7 +11,7 @@ const meta: Meta<typeof FeatureChef> = {
 export default meta
 type Story = StoryObj<typeof FeatureChef>
 
-export const Primary: Story = {
+export const Normal: Story = {
   args: {
     icon: "https://e0.pxfuel.com/wallpapers/799/210/desktop-wallpaper-chef-cook.jpg",
     name: "山田シェフ",
