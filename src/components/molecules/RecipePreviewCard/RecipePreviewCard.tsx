@@ -14,7 +14,7 @@ interface RecipePreviewCardProps {
 
 export const RecipePreviewCard = ({ recipe }: RecipePreviewCardProps) => {
   return (
-    <div className="flex flex-col justify-center w-[160px] h-[214]">
+    <div className="grid gap-2 justify-center w-[173px] h-[214]">
       <Link href="">
         <RecipePreviewPicture index={recipe.index} url={recipe.url}></RecipePreviewPicture>
       </Link>
