@@ -1,4 +1,5 @@
 import { Tab } from "./Tab"
+import SampleTabContent from "./_SampleTabContent"
 
 import type { Meta, StoryObj } from "@storybook/react"
 
@@ -11,20 +12,35 @@ const meta: Meta<typeof Tab> = {
 export default meta
 type Story = StoryObj<typeof Tab>
 
-export const Normal: Story = {
+export const three_tabs: Story = {
   args: {
     tabItems: [
       {
-        label: "ラベル1",
-        children: <div>aaa</div>,
+        label: "すべて",
+        component: <SampleTabContent bgColor="Mauve-10" />,
       },
       {
-        label: "ラベル2",
-        children: <div>bbb</div>,
+        label: "シェフ",
+        component: <div>コンポーネント2</div>,
       },
       {
-        label: "ラベル3",
-        children: <div>ccc</div>,
+        label: "レシピ",
+        component: <SampleTabContent bgColor="Tomato-12" />,
+      },
+    ],
+  },
+}
+
+export const two_tabs: Story = {
+  args: {
+    tabItems: [
+      {
+        label: "作り方",
+        component: <SampleTabContent bgColor="Mauve-10" />,
+      },
+      {
+        label: "材料",
+        component: <SampleTabContent bgColor="Tomato-12" />,
       },
     ],
   },

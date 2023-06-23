@@ -1,89 +1,37 @@
 "use client"
 
-import { createContext, useMemo, useState, useContext, FC, ReactNode, ReactElement } from "react"
+import { useState, ReactNode } from "react"
 
-type TabKey = string
-type TabLabel = string
-
-type TabLabelProps = {
-  defaultKey: TabKey
-  children: ReactElement<TabContentsProps>[]
+type TabProps = {
+  tabItems: { label: string; component: ReactNode }[]
 }
 
-type TabLabelItem = {
-  tabKey: TabKey
-  label: TabLabel
-}
-
-type TabContextState = {
-  activeKey: TabKey
-}
-
-const TabContext = createContext<TabContextState>({
-  activeKey: "",
-})
-
-export const TabLabel: FC<TabLabelProps> = ({ defaultKey, children }) => {
-  const [activeKey, setActiveKey] = useState(defaultKey)
-
-  const tabLabelItems = useMemo<TabLabelItem[]>(() => {
-    const headerArray: TabLabelItem[] = []
-
-    console.log("tanaka children", children)
-
-    console.log("tanaka Array.isArray(children)", Array.isArray(children))
-
-    children.forEach((c) => {
-      headerArray.push({
-        tabKey: c.props.tabKey,
-        label: c.props.label,
-      })
-    })
-
-    return headerArray
-  }, [children])
+export const Tab = ({ tabItems }: TabProps) => {
+  const [activeTab, setActiveTab] = useState<string>("item1")
 
   return (
-    <TabContext.Provider value={{ activeKey }}>
+    <div className="max-w-[480px] w-full">
       <ul className="flex">
-        {tabLabelItems.map(({ tabKey, label }) => {
+        {tabItems.map(({ label }, index) => {
           return (
-            <li className="px-4" key={tabKey}>
-              <button className="" onClick={() => setActiveKey(tabKey)}>
+            <li className="w-full" key={`item${index + 1}`}>
+              <button
+                className={[
+                  "w-full h-10 text-fs16 text-Mauve-12 text-center font-bold",
+                  activeTab === `item${index + 1}` && "border-b-2 border-0 border-Mauve-12",
+                ].join(" ")}
+                onClick={() => setActiveTab(`item${index + 1}`)}
+              >
                 {label}
               </button>
             </li>
           )
         })}
       </ul>
-      {children}
-    </TabContext.Provider>
-  )
-}
 
-type TabContentsProps = {
-  tabKey: TabKey
-  label: TabLabel
-  children: ReactNode
-}
-
-export const TabContents: FC<TabContentsProps> = ({ tabKey, children }) => {
-  const { activeKey } = useContext(TabContext)
-  return activeKey === tabKey ? <div>{children}</div> : null
-}
-
-type TabProps = {
-  tabItems: { label: string; children: ReactNode }[]
-}
-
-export const Tab = ({ tabItems }: TabProps) => {
-  return (
-    <TabLabel defaultKey="item1">
-      {tabItems.map((item, index) => (
-        <TabContents tabKey={`item${index + 1}`} label={item.label} key={index}>
-          {item.children}
-        </TabContents>
-      ))}
-    </TabLabel>
+      {tabItems.map(({ component }, index) => {
+        return activeTab === `item${index + 1}` ? component : null
+      })}
+    </div>
   )
 }
