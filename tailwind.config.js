@@ -14,6 +14,7 @@ module.exports = {
     },
     colors: {
       "Mauve-12": "#1A1523", // Mauve/Light/12
+      "Mauve-11": "#6F6E77", // Mauve/Light/11
       "Mauve-10": "#86848D", // Mauve/Light/10
       "Mauve-09": "#908E96", // Mauve/Light/9
       "Mauve-07": "#DCDBDD", // Mauve/Light/7
