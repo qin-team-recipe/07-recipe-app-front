@@ -12,11 +12,11 @@ export default meta
 type Story = StoryObj<typeof LikeButton>
 export const ライクボタン未押下: Story = {
   args: {
-    isLiked: false,
+    isLikedProp: false,
   },
 }
 export const ライクボタン押下: Story = {
   args: {
-    isLiked: true,
+    isLikedProp: true,
   },
 }
