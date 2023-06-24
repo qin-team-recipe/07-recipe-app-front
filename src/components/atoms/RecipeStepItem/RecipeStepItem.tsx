@@ -1,4 +1,4 @@
-interface RecipeStepItemProps {
+export interface RecipeStepItemProps {
   index: number
   title: string
   description: string
