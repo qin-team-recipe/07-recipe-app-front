@@ -7,14 +7,19 @@ interface ShoppingListItemProps {
   name: string
   description: string
   isCheckedProp: boolean
+  isShowDeleteButton: boolean
   onDelete: () => void
 }
 
-export const ShoppingListItem = ({ name, description, isCheckedProp = false, onDelete }: ShoppingListItemProps) => {
+export const ShoppingListItem = ({
+  name,
+  description,
+  isCheckedProp = false,
+  isShowDeleteButton = false,
+  onDelete,
+}: ShoppingListItemProps) => {
   const [isChecked, setIsChecked] = useState(isCheckedProp)
-
   const checkboxTextColor = isChecked ? "text-Mauve-08" : "text-Mauve-12"
-  const checkboxLabelClass = `text-fs14 ${checkboxTextColor}`
 
   const toggleCheck = () => {
     setIsChecked(!isChecked)
@@ -27,16 +32,18 @@ export const ShoppingListItem = ({ name, description, isCheckedProp = false, onD
   return (
     <li className="py-2 px-8 max-w-[480px] flex justify-between items-center">
       <Checkbox
-        label={<span className={checkboxLabelClass}>{name}</span>}
+        label={<span className={`text-fs14 ${checkboxTextColor}`}>{name}</span>}
         color="cyan"
         radius="lg"
         styles={styles.checkbox}
         checked={isChecked}
         onChange={toggleCheck}
       />
-      <button type="button" className="text-fs14 text-Tomato-09" onClick={onDelete}>
-        削除
-      </button>
+      {isShowDeleteButton && (
+        <button type="button" className="text-fs14 text-Tomato-09" onClick={onDelete}>
+          削除
+        </button>
+      )}
     </li>
   )
 }
