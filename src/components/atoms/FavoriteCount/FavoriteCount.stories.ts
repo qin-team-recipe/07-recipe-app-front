@@ -13,7 +13,21 @@ type Story = StoryObj<typeof FavoriteCount>
 
 export const Normal: Story = {
   args: {
-    likeIcon: "heart.svg",
     count: 1234,
+  },
+}
+export const 桁数1: Story = {
+  args: {
+    count: 1,
+  },
+}
+export const 桁数2: Story = {
+  args: {
+    count: 12,
+  },
+}
+export const 桁数6: Story = {
+  args: {
+    count: 123456,
   },
 }
