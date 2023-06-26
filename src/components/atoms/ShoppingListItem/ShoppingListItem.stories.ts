@@ -14,6 +14,7 @@ export const 買い物リスト_未チェック: Story = {
     name: "キャベツ",
     description: "5〜6枚",
     isCheckedProp: false,
+    isShowDeleteButton: false,
   },
 }
 
@@ -22,5 +23,6 @@ export const 買い物リスト_チェック済: Story = {
     name: "チーズ",
     description: "100g",
     isCheckedProp: true,
+    isShowDeleteButton: true,
   },
 }
