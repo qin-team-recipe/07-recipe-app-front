@@ -1,3 +1,4 @@
+import { CopyButton } from "@/components/atoms/CopyButton/CopyButton"
 import { RecipeStepItem, RecipeStepItemProps } from "@/components/atoms/RecipeStepItem/RecipeStepItem"
 
 // async function fetchRecipe() {
@@ -52,10 +53,13 @@ export default function RecipeStep() {
   ]
 
   return (
-    <ul>
-      {仮のレシピ.map(({ index, title, description }) => (
-        <RecipeStepItem key={index} index={index} title={title} description={description} />
-      ))}
-    </ul>
+    <div className="max-w-[480px]">
+      <ul>
+        {仮のレシピ.map(({ index, title, description }) => (
+          <RecipeStepItem key={index} index={index} title={title} description={description} />
+        ))}
+      </ul>
+      <CopyButton onClick={() => console.log("TODO: コピーボタン押下時の処理")} />
+    </div>
   )
 }
