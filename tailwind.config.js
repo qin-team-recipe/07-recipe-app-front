@@ -11,6 +11,9 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        inter: "Inter",
+      },
     },
     colors: {
       "Mauve-12": "#1A1523", // Mauve/Light/12
@@ -22,6 +25,7 @@ module.exports = {
       "Mauve-02": "#F9F8F9", // Mauve/Light/2
       "Mauve-01": "#FDFCFD", // Mauve/Light/1
       "Mauve-alpha-11": "#020010", // Mauve/Light Alpha/11
+      "Mauve-alpha-10": "#040013", // Mauve/Light Alpha/10
       "Tomato-12": "#E54D2E", // Tomato/Light/12
       "Tomato-11": "#CA3214", // Tomato/Light/11
       "Tomato-09": "#E54D2E", // Tomato/Light/9
