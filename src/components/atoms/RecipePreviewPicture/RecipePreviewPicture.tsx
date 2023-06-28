@@ -1,4 +1,4 @@
-import { Image } from "@mantine/core"
+import Image from "next/image"
 
 interface RecipePreviewPictureProps {
   index: number
@@ -6,5 +6,5 @@ interface RecipePreviewPictureProps {
 }
 
 export const RecipePreviewPicture = ({ index, url }: RecipePreviewPictureProps) => {
-  return <Image width={"173px"} height={"173px"} src={url} alt={`レシピ画像${index}`}></Image>
+  return <Image width={"194"} height={"173"} src={url} alt={`レシピ画像${index}`}></Image>
 }
