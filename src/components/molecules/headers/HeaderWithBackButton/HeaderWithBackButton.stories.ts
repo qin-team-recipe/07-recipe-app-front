@@ -3,7 +3,7 @@ import HeaderWithBackButton from "./HeaderWithBackButton"
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof HeaderWithBackButton> = {
-  title: "Molecules/Header/HeaderWithBackButton",
+  title: "Molecules/headers/HeaderWithBackButton",
   component: HeaderWithBackButton,
   tags: ["autodocs"],
 }
