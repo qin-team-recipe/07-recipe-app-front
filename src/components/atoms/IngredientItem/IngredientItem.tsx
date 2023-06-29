@@ -1,5 +1,7 @@
 /**
- * 料理の材料コンポーネント ＠レシピ詳細ページ
+ * 料理の材料コンポーネント
+ * ＠レシピ詳細画面
+ * ＠マイレシピ追加画面
  */
 "use client"
 
@@ -7,11 +9,17 @@ import Image from "next/image"
 
 interface IngredientItemProps {
   name: string
-  description: string
-  isAdded: boolean // お買い物リストに追加済かどうか？
+  description?: string
+  isUseCartButton?: boolean // お買い物リストに追加ボタンを使用するか？
+  isAdded?: boolean // お買い物リストに追加済かどうか？
 }
 
-export const IngredientItem = ({ name, description, isAdded }: IngredientItemProps) => {
+export const IngredientItem = ({
+  name,
+  description,
+  isUseCartButton = false,
+  isAdded = false,
+}: IngredientItemProps) => {
   const handleClick = () => {
     if (isAdded) {
       // TODO: お買い物リストから削除する処理をかく
@@ -21,19 +29,20 @@ export const IngredientItem = ({ name, description, isAdded }: IngredientItemPro
   }
 
   return (
-    <li className="py-2 px-4 max-w-[480px] flex justify-between items-center">
+    <li className="py-2 px-4 max-w-[480px] h-[49px] flex justify-between items-center">
       <div>
         <h3 className="text-Mauve-12 text-fs14 leading-[17px]">{name}</h3>
-        <p className="text-Mauve-10 text-fs10 leading-[12px] mt-1">{description}</p>
+        {description && <p className="text-Mauve-10 text-fs10 leading-[12px] mt-1">{description}</p>}
       </div>
-
-      <button type="button" onClick={handleClick}>
-        {isAdded ? (
-          <Image src="cart_icon_red.svg" alt="削除" width={20} height={20} />
-        ) : (
-          <Image src="cart_icon_gray.svg" alt="追加" width={20} height={20} />
-        )}
-      </button>
+      {isUseCartButton && (
+        <button type="button" onClick={handleClick}>
+          {isAdded ? (
+            <Image src="cart_icon_red.svg" alt="削除" width={20} height={20} />
+          ) : (
+            <Image src="cart_icon_gray.svg" alt="追加" width={20} height={20} />
+          )}
+        </button>
+      )}
     </li>
   )
 }
