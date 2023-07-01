@@ -1,14 +1,15 @@
-import { SocialButton } from "./SocialButton"
+import { SocialLoginButton } from "./SocialLoginButton"
+
 import type { Meta, StoryObj } from "@storybook/react"
 
-const meta: Meta<typeof SocialButton> = {
-  title: "Atoms/SocialButton",
-  component: SocialButton,
+const meta: Meta<typeof SocialLoginButton> = {
+  title: "Atoms/SocialLoginButton",
+  component: SocialLoginButton,
   tags: ["autodocs"],
 }
 
 export default meta
-type Story = StoryObj<typeof SocialButton>
+type Story = StoryObj<typeof SocialLoginButton>
 
 export const Googleでログイン: Story = {
   args: {

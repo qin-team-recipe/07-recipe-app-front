@@ -1,11 +1,11 @@
 import Image from "next/image"
 
-interface SocialButtonProps {
+interface SocialLoginButtonProps {
   platform: "Google" | "Apple"
   onClick?: () => void
 }
 
-export const SocialButton = ({ platform = "Google", onClick }: SocialButtonProps) => {
+export const SocialLoginButton = ({ platform = "Google", onClick }: SocialLoginButtonProps) => {
   const renderIcon = () => {
     let iconPath = ""
     if (platform === "Google") iconPath = "/assets/google_icon.svg"
