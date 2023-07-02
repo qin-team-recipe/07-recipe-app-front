@@ -42,6 +42,7 @@ module.exports = {
       fs16: "16px",
       fs20: "20px",
       fs24: "24px",
+      fs28: "28px",
     },
   },
   plugins: [],
