@@ -5,13 +5,13 @@
 
 import Image from "next/image"
 
-interface IngredientItemProps {
+interface IngredientListItemProps {
   name: string
   description: string
   isAdded: boolean // お買い物リストに追加済かどうか？
 }
 
-export const IngredientItem = ({ name, description, isAdded }: IngredientItemProps) => {
+export const IngredientListItem = ({ name, description, isAdded }: IngredientListItemProps) => {
   const handleClick = () => {
     if (isAdded) {
       // TODO: お買い物リストから削除する処理をかく

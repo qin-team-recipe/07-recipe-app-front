@@ -1,15 +1,15 @@
-import { IngredientItem } from "./IngredientItem"
+import { IngredientListItem } from "./IngredientListItem"
 
 import type { Meta, StoryObj } from "@storybook/react"
 
-const meta: Meta<typeof IngredientItem> = {
-  title: "Atoms/IngredientItem",
-  component: IngredientItem,
+const meta: Meta<typeof IngredientListItem> = {
+  title: "Atoms/IngredientListItem",
+  component: IngredientListItem,
   tags: ["autodocs"],
 }
 
 export default meta
-type Story = StoryObj<typeof IngredientItem>
+type Story = StoryObj<typeof IngredientListItem>
 
 export const 買い物リスト_追加済: Story = {
   args: {
