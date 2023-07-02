@@ -15,7 +15,8 @@ export const レシピプレビュー: Story = {
   args: {
     recipe: {
       index: 1,
-      url: "sample-meal.png",
+      imagePath: "sample-meal.png",
+      linkUrl: "/recipe/1",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
       content: "ウルトラハイパー超すごいしまぶーシェフ",
       count: 1,
@@ -26,7 +27,8 @@ export const レシピプレビュー_長文: Story = {
   args: {
     recipe: {
       index: 1,
-      url: "sample-meal.png",
+      imagePath: "sample-meal.png",
+      linkUrl: "/recipe/1",
       title:
         "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ、トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
       content:

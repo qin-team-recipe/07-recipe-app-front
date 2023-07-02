@@ -7,7 +7,8 @@ import { RecipePreviewText } from "../../atoms/RecipePreviewText/RecipePreviewTe
 type RecipePreviewCardProps = {
   recipe: {
     index: number
-    url: string
+    imagePath: string
+    linkUrl: string
     title: string
     content: string
     count: number
@@ -16,15 +17,11 @@ type RecipePreviewCardProps = {
 
 export const RecipePreviewCard = ({ recipe }: RecipePreviewCardProps) => {
   return (
-    <div className="grid gap-2 justify-center w-[194px] h-[248px]">
-      <Link href="">
-        <div className="relative">
-          <FavoriteCount count={recipe.count}></FavoriteCount>
-        </div>
-        <RecipePreviewPicture index={recipe.index} url={recipe.url}></RecipePreviewPicture>
-      </Link>
-      <RecipePreviewText previewTitle={recipe.title} previewContent={recipe.content}></RecipePreviewText>
-    </div>
+    <Link href={"recipe.linkUrl"} className="grid gap-2 justify-center w-[194px] h-[248px] relative">
+      <RecipePreviewPicture index={recipe.index} imagePath={recipe.imagePath} />
+      <RecipePreviewText previewTitle={recipe.title} previewContent={recipe.content} />
+      <FavoriteCount count={recipe.count} />
+    </Link>
   )
 }
 //TODO: ボタン押下時の処理

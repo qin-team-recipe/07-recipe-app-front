@@ -14,6 +14,6 @@ type Story = StoryObj<typeof RecipePreviewPicture>
 export const Normal: Story = {
   args: {
     index: 1,
-    url: "sample-meal.png",
+    imagePath: "sample-meal.png",
   },
 }
