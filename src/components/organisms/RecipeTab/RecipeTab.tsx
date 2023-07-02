@@ -1,6 +1,6 @@
 "use client"
 
-import { RecipePreviewCard } from "@/components/molecules/RecipePreviewCard/RecipePreviewCard"
+import { RecipeListItem } from "@/components/molecules/RecipeListItem/RecipeListItem"
 
 export const RecipeTab = () => {
   const dummyData = [
@@ -27,7 +27,7 @@ export const RecipeTab = () => {
       <div className="flex justify-center">
         <div className="w-[400px] grid  grid-cols-2 gap-y-4 gap-x-3  justify-stretch">
           {dummyData.map((v) => (
-            <RecipePreviewCard recipe={v} key={v.index}></RecipePreviewCard>
+            <RecipeListItem recipe={v} key={v.index}></RecipeListItem>
           ))}
         </div>
       </div>
