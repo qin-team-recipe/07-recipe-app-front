@@ -22,7 +22,7 @@ export const RecipeListItem = ({ recipe }: RecipeListItemProps) => {
         imagePath={recipe.imagePath}
         previewTitle={recipe.title}
         previewContent={recipe.content}
-        size="LARGE"
+        size="MEDIUM"
       />
       <FavoriteCount count={recipe.count} />
     </Link>
