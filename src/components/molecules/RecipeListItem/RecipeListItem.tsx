@@ -16,7 +16,7 @@ type RecipeListItemProps = {
 
 export const RecipeListItem = ({ recipe }: RecipeListItemProps) => {
   return (
-    <Link href={"recipe.linkUrl"} className="grid gap-2 justify-center w-[194px] h-[248px] relative">
+    <Link href={"recipe.linkUrl"} className="relative">
       <RecipePreviewCard
         index={recipe.index}
         imagePath={recipe.imagePath}
