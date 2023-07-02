@@ -11,11 +11,31 @@ const meta: Meta<typeof RecipePreviewCard> = {
 export default meta
 type Story = StoryObj<typeof RecipePreviewCard>
 
-export const Normal: Story = {
+export const SmallCard: Story = {
   args: {
     index: 1,
     imagePath: "sample-meal.png",
     previewTitle: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
     previewContent: "ウルトラハイパー超すごいしまぶーシェフ",
+    size: "SMALL",
+  },
+}
+
+export const MidiumCard: Story = {
+  args: {
+    index: 1,
+    imagePath: "sample-meal.png",
+    previewTitle: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
+    previewContent: "ウルトラハイパー超すごいしまぶーシェフ",
+    size: "MEDIUM",
+  },
+}
+export const LargeCard: Story = {
+  args: {
+    index: 1,
+    imagePath: "sample-meal.png",
+    previewTitle: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
+    previewContent: "ウルトラハイパー超すごいしまぶーシェフ",
+    size: "LARGE",
   },
 }
