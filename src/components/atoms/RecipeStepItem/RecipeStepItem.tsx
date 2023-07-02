@@ -1,10 +1,10 @@
-interface RecipeCardProps {
+export interface RecipeStepItemProps {
   index: number
   title: string
   description: string
 }
 
-export const RecipeCard = ({ index, title, description }: RecipeCardProps) => {
+export const RecipeStepItem = ({ index, title, description }: RecipeStepItemProps) => {
   return (
     <li className="list-none py-2 px-4 border-0 border-b-[1px] border-Mauve-07 border-solid flex max-w-[480px] box-border">
       <p className="text-Mauve-01 text-fs12 leading-[18px] text-center my-0 w-[18px] h-[18px] bg-Tomato-11 rounded-full">
