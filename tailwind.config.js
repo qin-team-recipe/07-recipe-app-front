@@ -30,6 +30,7 @@ module.exports = {
       "Tomato-12": "#E54D2E", // Tomato/Light/12
       "Tomato-11": "#CA3214", // Tomato/Light/11
       "Tomato-09": "#E54D2E", // Tomato/Light/9
+      "Blue-alpha-11": "#0066DB", // Blue/Light Alpha/11
     },
     fontSize: {
       fs10: "10px",

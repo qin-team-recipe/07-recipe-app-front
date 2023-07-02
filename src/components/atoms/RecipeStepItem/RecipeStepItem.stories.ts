@@ -1,15 +1,15 @@
-import { RecipeCard } from "./RecipeCard"
+import { RecipeStepItem } from "./RecipeStepItem"
 
 import type { Meta, StoryObj } from "@storybook/react"
 
-const meta: Meta<typeof RecipeCard> = {
-  title: "Atoms/RecipeCard",
-  component: RecipeCard,
+const meta: Meta<typeof RecipeStepItem> = {
+  title: "Atoms/RecipeStepItem",
+  component: RecipeStepItem,
   tags: ["autodocs"],
 }
 
 export default meta
-type Story = StoryObj<typeof RecipeCard>
+type Story = StoryObj<typeof RecipeStepItem>
 
 export const Normal: Story = {
   args: {

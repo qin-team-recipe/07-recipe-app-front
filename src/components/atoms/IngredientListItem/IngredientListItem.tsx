@@ -7,19 +7,19 @@
 
 import Image from "next/image"
 
-interface IngredientItemProps {
+interface IngredientListItemProps {
   name: string
   description?: string
   isUseCartButton?: boolean // お買い物リストに追加ボタンを使用するか？
   isAdded?: boolean // お買い物リストに追加済かどうか？
 }
 
-export const IngredientItem = ({
+export const IngredientListItem = ({
   name,
   description,
   isUseCartButton = false,
   isAdded = false,
-}: IngredientItemProps) => {
+}: IngredientListItemProps) => {
   const handleClick = () => {
     if (isAdded) {
       // TODO: お買い物リストから削除する処理をかく
