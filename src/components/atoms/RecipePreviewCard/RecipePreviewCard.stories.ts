@@ -21,7 +21,7 @@ export const SmallCard: Story = {
   },
 }
 
-export const MidiumCard: Story = {
+export const MediumCard: Story = {
   args: {
     index: 1,
     imagePath: "sample-meal.png",
