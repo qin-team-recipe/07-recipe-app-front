@@ -13,7 +13,7 @@ export const RecipeTab = () => {
       count: 1,
     },
     {
-      index: 1,
+      index: 2,
       imagePath: "/sample-meal.png",
       linkUrl: "",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
@@ -21,7 +21,7 @@ export const RecipeTab = () => {
       count: 1,
     },
     {
-      index: 1,
+      index: 3,
       imagePath: "/sample-meal.png",
       linkUrl: "",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
@@ -31,13 +31,11 @@ export const RecipeTab = () => {
   ]
 
   return (
-    <>
-      <div className="w-[358px] mx-4 my-5 grid  grid-cols-2 gap-y-4 gap-x-3 ">
-        {dummyData.map((v) => (
-          <RecipeListItem recipe={v} key={v.index}></RecipeListItem>
-        ))}
-      </div>
-    </>
+    <div className="w-[358px] mx-4 my-5 grid  grid-cols-2 gap-y-4 gap-x-3 ">
+      {dummyData.map((v) => (
+        <RecipeListItem recipe={v} key={v.index}></RecipeListItem>
+      ))}
+    </div>
   )
 }
 
