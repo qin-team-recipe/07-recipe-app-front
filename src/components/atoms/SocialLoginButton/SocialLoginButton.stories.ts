@@ -13,12 +13,12 @@ type Story = StoryObj<typeof SocialLoginButton>
 
 export const Googleでログイン: Story = {
   args: {
-    platform: "Google",
+    platform: "google",
   },
 }
 
 export const Appleでログイン: Story = {
   args: {
-    platform: "Apple",
+    platform: "apple",
   },
 }
