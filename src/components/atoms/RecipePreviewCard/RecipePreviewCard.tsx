@@ -8,8 +8,8 @@ const PIC_SIZE = {
 
 const H_SIZE = {
   SMALL: "214",
-  MEDIUM: "227",
-  LARGE: "248",
+  MEDIUM: "229",
+  LARGE: "272",
 } as const
 
 type RecipePreviewCardProps = Required<{
