@@ -26,7 +26,7 @@ export const LinkTab = () => {
   ]
 
   return (
-    <div className="w-[358px] mx-4 my-5  gap-y-4 gap-x-3 ">
+    <div className="w-[390px]  gap-y-4 gap-x-3 ">
       {dummyData.map((v) => (
         <LinkListItem
           key={v.index}
