@@ -11,7 +11,7 @@ export const LinkTab = () => {
     },
     {
       index: 24,
-      linkType: LINK_TYPE["INSTAGLAM"],
+      linkType: LINK_TYPE["INSTAGRAM"],
       linkTitle: "Instagram",
       linkDiscription: "@username",
       linkDestination: "https://Instagram.com/",

@@ -22,7 +22,7 @@ export const List: Story = {
     },
     {
       index: 24,
-      linkType: "INSTAGLAM",
+      linkType: "INSTAGRAM",
       linkTitle: "Instagram",
       linkDiscription: "@username",
       linkDestination: "https://Instagram.com/",

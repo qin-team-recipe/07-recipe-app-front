@@ -22,7 +22,7 @@ export const TwitterLinkItem: Story = {
 
 export const InstagramLinkItem: Story = {
   args: {
-    linkType: LINK_TYPE["INSTAGLAM"],
+    linkType: LINK_TYPE["INSTAGRAM"],
     linkTitle: "Instagram",
     linkDiscription: "@username",
     linkDestination: "https://Instagram.com/",

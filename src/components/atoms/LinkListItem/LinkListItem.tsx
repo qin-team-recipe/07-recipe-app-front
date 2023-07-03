@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const LINK_TYPE = {
   TWITTER: "TWITTER",
-  INSTAGLAM: "INSTAGLAM",
+  INSTAGRAM: "INSTAGRAM",
   OTHER: "OTHER",
 } as const
 
@@ -21,7 +21,7 @@ export const LinkListItem = ({ linkType, linkTitle, linkDiscription, linkDestina
       {(() => {
         if (linkType === LINK_TYPE.TWITTER) {
           return <Image src="/twitter_icon.svg" width={36} height={36} alt="twitterIcon" />
-        } else if (linkType === LINK_TYPE.INSTAGLAM) {
+        } else if (linkType === LINK_TYPE.INSTAGRAM) {
           return <Image src="/instagram_icon.svg" width={36} height={36} alt="instagramIcon" />
         } else {
           return <Image src="/link_icon.svg" width={36} height={36} alt="linkIcon" />
