@@ -16,6 +16,7 @@ module.exports = {
       },
     },
     colors: {
+      White: "#FFFFFF", // White
       "Mauve-12": "#1A1523", // Mauve/Light/12
       "Mauve-11": "#6F6E77", // Mauve/Light/11
       "Mauve-10": "#86848D", // Mauve/Light/10
@@ -31,6 +32,7 @@ module.exports = {
       "Tomato-11": "#CA3214", // Tomato/Light/11
       "Tomato-09": "#E54D2E", // Tomato/Light/9
       "Blue-alpha-11": "#0066DB", // Blue/Light Alpha/11
+      "Blue-light-10": "#0081F1", // Blue/Light/10
     },
     fontSize: {
       fs10: "10px",
