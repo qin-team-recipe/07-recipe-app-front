@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { TextButton } from "@/components/atoms/TextButton/TextButton"
+import { TextButton } from "@/components/atoms/buttons/TextButton/TextButton"
 
 interface MyReceipeHeaderProps {
   close: () => void

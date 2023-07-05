@@ -4,8 +4,8 @@
 
 import Image from "next/image"
 
-import { CopyButton } from "@/components/atoms/CopyButton/CopyButton"
 import { IngredientListItem } from "@/components/atoms/IngredientListItem/IngredientListItem"
+import { CopyButton } from "@/components/atoms/buttons/CopyButton/CopyButton"
 
 type Props = {
   servingOfNumber: number // ⚪︎人前

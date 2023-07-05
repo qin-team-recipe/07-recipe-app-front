@@ -3,7 +3,7 @@ import { AddButton } from "./AddButton"
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof AddButton> = {
-  title: "Atoms/AddButton",
+  title: "Atoms/buttons/AddButton",
   component: AddButton,
   tags: ["autodocs"],
 }
