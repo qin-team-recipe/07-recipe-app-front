@@ -16,7 +16,7 @@ export const レシピタブ: Story = {
     recipe: [
       {
         index: 1,
-        imagePath: "sample-meal.png",
+        imagePath: "assets/images/sample-meal.png",
         linkUrl: "/recipe/1",
         title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
         content: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -24,7 +24,7 @@ export const レシピタブ: Story = {
       },
       {
         index: 2,
-        imagePath: "sample-meal.png",
+        imagePath: "assets/images/sample-meal.png",
         linkUrl: "/recipe/1",
         title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
         content: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -32,7 +32,7 @@ export const レシピタブ: Story = {
       },
       {
         index: 3,
-        imagePath: "sample-meal.png",
+        imagePath: "assets/images/sample-meal.png",
         linkUrl: "/recipe/1",
         title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
         content: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -40,7 +40,7 @@ export const レシピタブ: Story = {
       },
       {
         index: 4,
-        imagePath: "sample-meal.png",
+        imagePath: "assets/images/sample-meal.png",
         linkUrl: "/recipe/1",
         title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
         content: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -48,7 +48,7 @@ export const レシピタブ: Story = {
       },
       {
         index: 5,
-        imagePath: "sample-meal.png",
+        imagePath: "assets/images/sample-meal.png",
         linkUrl: "/recipe/1",
         title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
         content: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -56,7 +56,7 @@ export const レシピタブ: Story = {
       },
       {
         index: 99999,
-        imagePath: "sample-meal.png",
+        imagePath: "assets/images/sample-meal.png",
         linkUrl: "/recipe/1",
         title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
         content: "ウルトラハイパー超すごいしまぶーシェフ",

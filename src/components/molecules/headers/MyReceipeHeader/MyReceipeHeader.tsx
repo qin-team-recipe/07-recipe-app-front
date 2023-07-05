@@ -17,11 +17,11 @@ export const MyReceipeHeader = ({ close, draft, create, isExistDraft, isEditing 
   return (
     <div className="flex justify-between items-center bg-Mauve-01 py-[12px] px-[16px] max-w-[480px]">
       <Image
-        src="/assets/closeButton.svg"
+        src="assets/icons/close.svg"
         className="cursor-pointer"
         width={24}
         height={24}
-        alt="closeButton"
+        alt="close"
         onClick={close}
       />
       <div className="flex items-center">

@@ -37,9 +37,9 @@ export const IngredientListItem = ({
       {isUseCartButton && (
         <button type="button" onClick={handleClick}>
           {isAdded ? (
-            <Image src="cart_icon_red.svg" alt="削除" width={20} height={20} />
+            <Image src="assets/icons/cart_red.svg" alt="削除" width={20} height={20} />
           ) : (
-            <Image src="cart_icon_gray.svg" alt="追加" width={20} height={20} />
+            <Image src="assets/icons/cart_gray.svg" alt="追加" width={20} height={20} />
           )}
         </button>
       )}

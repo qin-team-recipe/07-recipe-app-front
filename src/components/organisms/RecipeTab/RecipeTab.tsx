@@ -6,7 +6,7 @@ export const RecipeTab = () => {
   const dummyData = [
     {
       index: 1,
-      imagePath: "/sample-meal.png",
+      imagePath: "/assets/images/sample-meal.png",
       linkUrl: "",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
       content: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -14,7 +14,7 @@ export const RecipeTab = () => {
     },
     {
       index: 2,
-      imagePath: "/sample-meal.png",
+      imagePath: "/assets/images/sample-meal.png",
       linkUrl: "",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
       content: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -22,7 +22,7 @@ export const RecipeTab = () => {
     },
     {
       index: 3,
-      imagePath: "/sample-meal.png",
+      imagePath: "/assets/images/sample-meal.png",
       linkUrl: "",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
       content: "ウルトラハイパー超すごいしまぶーシェフ",
