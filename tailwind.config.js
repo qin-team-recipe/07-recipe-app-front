@@ -31,6 +31,7 @@ module.exports = {
       "Tomato-12": "#E54D2E", // Tomato/Light/12
       "Tomato-11": "#CA3214", // Tomato/Light/11
       "Tomato-09": "#E54D2E", // Tomato/Light/9
+      "Tomato-07": "#F3B0A2", // Tomato/Light/7
       "Blue-alpha-11": "#0066DB", // Blue/Light Alpha/11
       "Blue-light-10": "#0081F1", // Blue/Light/10
     },
