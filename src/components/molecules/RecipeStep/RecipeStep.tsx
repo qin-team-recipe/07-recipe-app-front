@@ -1,5 +1,5 @@
-import { CopyButton } from "@/components/atoms/CopyButton/CopyButton"
 import { RecipeStepItem, RecipeStepItemProps } from "@/components/atoms/RecipeStepItem/RecipeStepItem"
+import { CopyButton } from "@/components/atoms/buttons/CopyButton/CopyButton"
 
 // async function fetchRecipe() {
 //   const res = await fetch('', {})

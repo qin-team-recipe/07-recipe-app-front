@@ -3,7 +3,7 @@ import { LikeButton } from "./LikeButton"
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof LikeButton> = {
-  title: "Atoms/LikeButton",
+  title: "Atoms/buttons/LikeButton",
   component: LikeButton,
   tags: ["autodocs"],
 }

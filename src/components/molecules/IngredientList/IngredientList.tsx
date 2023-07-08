@@ -4,8 +4,8 @@
 
 import Image from "next/image"
 
-import { CopyButton } from "@/components/atoms/CopyButton/CopyButton"
 import { IngredientListItem } from "@/components/atoms/IngredientListItem/IngredientListItem"
+import { CopyButton } from "@/components/atoms/buttons/CopyButton/CopyButton"
 
 type Props = {
   servingOfNumber: number // ⚪︎人前
@@ -49,7 +49,7 @@ export const IngredientList = ({ servingOfNumber }: Props) => {
       <div className="flex items-center justify-between pt-5 px-4 pb-2 h-[52px]">
         <h3 className="text-Mauve-12 text-fs20 font-bold leading-none">{servingOfNumber}人前</h3>
         <button className="flex items-center font-bold" onClick={handleClickAddAll}>
-          <Image className="mr-[2px]" src="cart_icon_gray.svg" alt="cartIcon" width={18} height={18} />
+          <Image className="mr-[2px]" src="assets/icons/cart_gray.svg" alt="cartIcon" width={18} height={18} />
           <span className="text-Mauve-09 text-fs16 font-bold leading-none">まとめてお買い物に追加</span>
         </button>
       </div>

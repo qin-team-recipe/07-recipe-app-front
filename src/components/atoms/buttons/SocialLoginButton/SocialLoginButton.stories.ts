@@ -3,7 +3,7 @@ import { SocialLoginButton } from "./SocialLoginButton"
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof SocialLoginButton> = {
-  title: "Atoms/SocialLoginButton",
+  title: "Atoms/buttons/SocialLoginButton",
   component: SocialLoginButton,
   tags: ["autodocs"],
 }

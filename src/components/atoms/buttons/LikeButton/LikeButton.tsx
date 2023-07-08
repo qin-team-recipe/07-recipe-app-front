@@ -21,13 +21,13 @@ export const LikeButton = ({ isLikedProp }: LikeButtonProps) => {
   return isLiked ? (
     <>
       <ThemeIcon radius="xl" size="xl" className="bg-Tomato-12 w-[60px] h-[60px] cursor-pointer" onClick={turnOffLike}>
-        <Image src="heart.svg" alt="ライク" width={36} height={36}></Image>
+        <Image src="assets/icons/heart.svg" alt="ライク" width={36} height={36}></Image>
       </ThemeIcon>
     </>
   ) : (
     <>
       <ThemeIcon radius="xl" size="xl" className="bg-Mauve-10 w-[60px] h-[60px] cursor-pointer" onClick={turnOnLike}>
-        <Image src="heart.svg" alt="ライク" width={36} height={36}></Image>
+        <Image src="assets/icons/heart.svg" alt="ライク" width={36} height={36}></Image>
       </ThemeIcon>
     </>
   )

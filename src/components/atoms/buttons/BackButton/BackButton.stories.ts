@@ -3,7 +3,7 @@ import { BackButton } from "./BackButton"
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof BackButton> = {
-  title: "Atoms/BackButton",
+  title: "Atoms/buttons/BackButton",
   component: BackButton,
   tags: ["autodocs"],
 }

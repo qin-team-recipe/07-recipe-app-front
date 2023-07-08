@@ -2,7 +2,7 @@
  * 共通ヘッダー ( 戻るボタン + ページタイトル )
  */
 
-import { BackButton } from "@/components/atoms/BackButton/BackButton"
+import { BackButton } from "@/components/atoms/buttons/BackButton/BackButton"
 
 type HeaderWithBackButtonProps = {
   title: string
