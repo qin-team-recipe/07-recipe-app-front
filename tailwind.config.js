@@ -36,6 +36,7 @@ module.exports = {
       fs12: "12px",
       fs14: "14px",
       fs16: "16px",
+      fs22: "22px",
       fs24: "24px",
       fs28: "28px",
     },
