@@ -5,22 +5,22 @@ export const LinkTab = () => {
     {
       index: 4,
       platform: LINK_TYPE["YOUTUBE"],
-      linkTitle: "Twitter",
-      linkDiscription: "@username",
+      linkTitle: "YOUTUBE",
+      linkDiscription: "",
       linkDestination: "https://youtube.com/",
     },
     {
       index: 14,
       platform: LINK_TYPE["TWITTER"],
       linkTitle: "Twitter",
-      linkDiscription: "@username",
+      linkDiscription: "",
       linkDestination: "https://twitter.com/",
     },
     {
       index: 24,
       platform: LINK_TYPE["INSTAGRAM"],
       linkTitle: "Instagram",
-      linkDiscription: "@username",
+      linkDiscription: "",
       linkDestination: "https://Instagram.com/",
     },
     {
