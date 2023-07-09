@@ -15,7 +15,7 @@ export const YoutubeLinkItem: Story = {
   args: {
     platform: LINK_TYPE["YOUTUBE"],
     linkTitle: "Youtube",
-    linkDiscription: "",
+    linkDescription: "",
     linkDestination: "https://youtube.com/",
   },
 }
@@ -24,7 +24,7 @@ export const TwitterLinkItem: Story = {
   args: {
     platform: LINK_TYPE["TWITTER"],
     linkTitle: "Twitter",
-    linkDiscription: "",
+    linkDescription: "",
     linkDestination: "https://twitter.com/",
   },
 }
@@ -33,7 +33,7 @@ export const InstagramLinkItem: Story = {
   args: {
     platform: LINK_TYPE["INSTAGRAM"],
     linkTitle: "Instagram",
-    linkDiscription: "",
+    linkDescription: "",
     linkDestination: "https://Instagram.com/",
   },
 }
@@ -41,7 +41,7 @@ export const OtherLinkItem: Story = {
   args: {
     platform: LINK_TYPE["OTHER"],
     linkTitle: "サイト",
-    linkDiscription: "https://www.google.com/",
+    linkDescription: "https://www.google.com/",
     linkDestination: "https://www.google.com/",
   },
 }
