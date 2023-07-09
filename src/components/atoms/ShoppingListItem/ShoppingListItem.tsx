@@ -5,21 +5,22 @@ import { useState } from "react"
 
 interface ShoppingListItemProps {
   name: string
-  description: string
   isCheckedProp: boolean
   isShowDeleteButton: boolean
+  isEditing: boolean
   onDelete: () => void
 }
 
 export const ShoppingListItem = ({
   name,
-  description,
   isCheckedProp = false,
   isShowDeleteButton = false,
+  isEditing = false,
   onDelete,
 }: ShoppingListItemProps) => {
   const [isChecked, setIsChecked] = useState(isCheckedProp)
   const checkboxTextColor = isChecked ? "text-Mauve-08" : "text-Mauve-12"
+  const [itemName, setItemName] = useState(name)
 
   const toggleCheck = () => {
     setIsChecked(!isChecked)
@@ -29,15 +30,19 @@ export const ShoppingListItem = ({
     checkbox: { input: { cursor: "pointer" }, label: { cursor: "pointer" } },
   }
 
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setItemName(event.target.value)
+  }
+
   return (
-    <li className="py-2 px-8 max-w-[480px] flex justify-between items-center">
-      <Checkbox
-        label={<span className={`text-fs14 ${checkboxTextColor}`}>{name}</span>}
-        color="cyan"
-        radius="lg"
-        styles={styles.checkbox}
-        checked={isChecked}
-        onChange={toggleCheck}
+    <li className="py-2 px-8 max-w-[480px] flex gap-2 items-center">
+      <Checkbox color="cyan" radius="lg" styles={styles.checkbox} checked={isChecked} onChange={toggleCheck} />
+      <input
+        type="text"
+        className={`text-fs14 ${checkboxTextColor}`}
+        value={itemName}
+        onChange={handleNameChange}
+        readOnly={!isEditing}
       />
       {isShowDeleteButton && (
         <button type="button" className="text-fs14 text-Tomato-09" onClick={onDelete}>
