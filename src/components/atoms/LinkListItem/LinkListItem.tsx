@@ -23,7 +23,9 @@ export const LinkListItem = ({ platform, linkTitle, linkDescription, linkDestina
         <Image src={`/${platform}_icon.svg`} width={36} height={36} alt={`${platform}Icon`} />
         <div className="grow flex-col justify-start items-start gap-1 inline-flex">
           <div className="text-Mauve-12 text-fs16 font-Inter">{linkTitle}</div>
-          {linkDescription && <div className="text-Mauve-11 text-fs14 font-Inter">{linkDescription}</div>}
+          {platform === LINK_TYPE["OTHER"] && linkDescription && (
+            <div className="text-Mauve-11 text-fs14 font-Inter">{linkDescription}</div>
+          )}
         </div>
 
         <Image className="mr-1" src="/arrow_link.svg" width={16} height={16} alt="addIcon" />
