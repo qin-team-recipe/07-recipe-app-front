@@ -33,8 +33,9 @@ export const LinkTab = () => {
   ]
 
   return (
-    <div className="w-[390px]  gap-y-4 gap-x-3 ">
+    <ul className="w-[390px]  gap-y-4 gap-x-3 ">
       {dummyData.map((v) => (
+        <li key={v.key}>
         <LinkListItem
           key={v.index}
           platform={v.platform}
@@ -42,7 +43,8 @@ export const LinkTab = () => {
           linkDescription={v.linkDescription}
           linkDestination={v.linkDestination}
         />
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
