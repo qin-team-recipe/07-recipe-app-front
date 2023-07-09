@@ -9,13 +9,15 @@ interface FavoriteChefListProps {
 
 export const FavoriteChefList = ({ chefs }: FavoriteChefListProps) => {
   return (
-    <>
+    <section>
       <p className="text-fs20 font-bold mb-3">シェフ</p>
-      <div className="flex gap-4">
-        {chefs.map((chef) => (
-          <CircleChef key={chef.url} icon={chef.icon} name={chef.name} url={chef.url} />
+      <ul className="flex gap-4 max-w-[480px] overflow-x-scroll">
+        {chefs.map((chef, index) => (
+          <li key={index}>
+            <CircleChef icon={chef.icon} name={chef.name} url={chef.url} />
+          </li>
         ))}
-      </div>
-    </>
+      </ul>
+    </section>
   )
 }
