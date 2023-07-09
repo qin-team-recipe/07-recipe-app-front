@@ -14,28 +14,28 @@ type Story = StoryObj<typeof LinkTab>
 export const List: Story = {
   args: [
     {
-      index: 4,
+      key: "aaaaaaaa",
       platform: "youtube",
       linkTitle: "Yotube",
       linkDescription: "",
       linkDestination: "https://youtube.com/",
     },
     {
-      index: 14,
+      key: "bbbbbbbbb",
       platform: "twitter",
       linkTitle: "Twitter",
       linkDescription: "",
       linkDestination: "https://twitter.com/",
     },
     {
-      index: 24,
+      key: "bbbbbbbbb",
       platform: "instagram",
       linkTitle: "Instagram",
       linkDescription: "",
       linkDestination: "https://Instagram.com/",
     },
     {
-      index: 34,
+      key: "ddddddddd",
       platform: "other",
       linkTitle: "サイト",
       linkDescription: "",
