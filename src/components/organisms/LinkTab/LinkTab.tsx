@@ -6,28 +6,28 @@ export const LinkTab = () => {
       index: 4,
       platform: LINK_TYPE["YOUTUBE"],
       linkTitle: "YOUTUBE",
-      linkDiscription: "",
+      linkDescription: "",
       linkDestination: "https://youtube.com/",
     },
     {
       index: 14,
       platform: LINK_TYPE["TWITTER"],
       linkTitle: "Twitter",
-      linkDiscription: "",
+      linkDescription: "",
       linkDestination: "https://twitter.com/",
     },
     {
       index: 24,
       platform: LINK_TYPE["INSTAGRAM"],
       linkTitle: "Instagram",
-      linkDiscription: "",
+      linkDescription: "",
       linkDestination: "https://Instagram.com/",
     },
     {
       index: 34,
       platform: LINK_TYPE["OTHER"],
       linkTitle: "サイト",
-      linkDiscription: "https://www.google.com/",
+      linkDescription: "https://www.google.com/",
       linkDestination: "https://www.google.com/",
     },
   ]
@@ -39,7 +39,7 @@ export const LinkTab = () => {
           key={v.index}
           platform={v.platform}
           linkTitle={v.linkTitle}
-          linkDiscription={v.linkDiscription}
+          linkDescription={v.linkDescription}
           linkDestination={v.linkDestination}
         />
       ))}
