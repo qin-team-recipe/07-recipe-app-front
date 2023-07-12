@@ -1,30 +1,30 @@
-import { LinkListItem, LINK_TYPE } from "../../atoms/LinkListItem/LinkListItem"
+import { LINK_TYPE, LinkListItem } from "../../atoms/LinkListItem/LinkListItem"
 
 export const LinkTab = () => {
   const dummyData = [
     {
-      key: "aaaaaaaa",
+      id: "aaaaaaaa",
       platform: LINK_TYPE["YOUTUBE"],
       linkTitle: "YOUTUBE",
       linkDescription: "",
       linkDestination: "https://youtube.com/",
     },
     {
-      key: "bbbbbbbbb",
+      id: "bbbbbbbbb",
       platform: LINK_TYPE["TWITTER"],
       linkTitle: "Twitter",
       linkDescription: "",
       linkDestination: "https://twitter.com/",
     },
     {
-      key: "ccccccc",
+      id: "ccccccc",
       platform: LINK_TYPE["INSTAGRAM"],
       linkTitle: "Instagram",
       linkDescription: "",
       linkDestination: "https://Instagram.com/",
     },
     {
-      key: "ddddddddd",
+      id: "ddddddddd",
       platform: LINK_TYPE["OTHER"],
       linkTitle: "サイト",
       linkDescription: "https://www.google.com/",
@@ -33,9 +33,9 @@ export const LinkTab = () => {
   ]
 
   return (
-    <ul className="w-[390px]  gap-y-4 gap-x-3 ">
+    <ul className="w-[390px]  gap-x-3 gap-y-4 ">
       {dummyData.map((v) => (
-        <li key={v.key}>
+        <li key={v.id}>
           <LinkListItem
             platform={v.platform}
             linkTitle={v.linkTitle}
