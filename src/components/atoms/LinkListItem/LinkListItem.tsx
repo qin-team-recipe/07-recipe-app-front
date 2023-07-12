@@ -9,22 +9,22 @@ export const LINK_TYPE = {
 } as const
 
 type LINK_TYPE = (typeof LINK_TYPE)[keyof typeof LINK_TYPE]
-type LinkListItemProps = Required<{
+type LinkListItemProps = {
   platform: LINK_TYPE
   linkTitle: string
-  linkDescription: string
+  linkDescription?: string
   linkDestination: string
-}>
+}
 
 export const LinkListItem = ({ platform, linkTitle, linkDescription, linkDestination }: LinkListItemProps) => {
   return (
     <Link href={linkDestination}>
-      <div className="w-[390px] h-16 px-4 py-3 border border-Mauve-06 justify-start items-center gap-4 inline-flex">
+      <div className="inline-flex h-16 w-[390px] items-center justify-start gap-4 border border-Mauve-06 px-4 py-3">
         <Image src={`/${platform}_icon.svg`} width={36} height={36} alt={`${platform}Icon`} />
-        <div className="grow flex-col justify-start items-start gap-1 inline-flex">
-          <div className="text-Mauve-12 text-fs16 font-Inter">{linkTitle}</div>
-          {platform === LINK_TYPE["OTHER"] && linkDescription && (
-            <div className="text-Mauve-11 text-fs14 font-Inter">{linkDescription}</div>
+        <div className="inline-flex grow flex-col items-start justify-start gap-1">
+          <div className="font-Inter text-fs16 text-Mauve-12">{linkTitle}</div>
+          {platform === LINK_TYPE["OTHER"] && (
+            <div className="font-Inter text-fs14 text-Mauve-11">{linkDescription}</div>
           )}
         </div>
 
