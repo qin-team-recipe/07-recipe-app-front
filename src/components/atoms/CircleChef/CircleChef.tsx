@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-interface CircleChefProps {
+export interface CircleChefProps {
   icon: string
   name: string
   url: string
