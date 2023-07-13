@@ -24,6 +24,7 @@ module.exports = {
       "Mauve-08": "#C8C7CB", // Mauve/Light/8
       "Mauve-07": "#DCDBDD", // Mauve/Light/7
       "Mauve-06": "#E4E2E4", // Mauve/Light/6
+      "Mauve-04": "#EEEDEF", // Mauve/Light/4
       "Mauve-02": "#F9F8F9", // Mauve/Light/2
       "Mauve-01": "#FDFCFD", // Mauve/Light/1
       "Mauve-alpha-11": "#020010", // Mauve/Light Alpha/11
