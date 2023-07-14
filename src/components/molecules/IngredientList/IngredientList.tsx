@@ -47,10 +47,10 @@ export const IngredientList = ({ servingOfNumber }: Props) => {
   return (
     <div className="max-w-[480px]">
       <div className="flex h-[52px] items-center justify-between px-4 pb-2 pt-5">
-        <h3 className="text-fs20 font-bold leading-none text-Mauve-12">{servingOfNumber}人前</h3>
+        <h3 className="text-xl font-bold text-Mauve-12">{servingOfNumber}人前</h3>
         <button className="flex items-center font-bold" onClick={handleClickAddAll}>
           <Image className="mr-[2px]" src="assets/icons/cart_gray.svg" alt="cartIcon" width={18} height={18} />
-          <span className="text-fs16 font-bold leading-none text-Mauve-09">まとめてお買い物に追加</span>
+          <span className="text-base font-bold text-Mauve-09">まとめてお買い物に追加</span>
         </button>
       </div>
       <ul className="divide-y divide-Mauve-07 border border-l-0 border-r-0 border-Mauve-07">

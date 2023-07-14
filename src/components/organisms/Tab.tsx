@@ -17,7 +17,7 @@ export const Tab = ({ tabItems }: TabProps) => {
             <li className="w-full" key={`item${index + 1}`}>
               <button
                 className={[
-                  "h-10 w-full text-center text-fs16 font-bold text-Mauve-12",
+                  "h-10 w-full text-center text-base font-bold text-Mauve-12",
                   activeTab === `item${index + 1}` && "border-0 border-b-2 border-Mauve-12",
                 ].join(" ")}
                 onClick={() => setActiveTab(`item${index + 1}`)}
