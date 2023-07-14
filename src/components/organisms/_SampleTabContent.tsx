@@ -8,7 +8,7 @@ type Props = {
 
 const SampleTabContent = (props: Props) => {
   return (
-    <div className={`w-full h-96 bg-${props.bgColor}`}>
+    <div className={`h-96 w-full bg-${props.bgColor}`}>
       サンプルのコンポーネントです
       <br />
       サンプルのコンポーネントです

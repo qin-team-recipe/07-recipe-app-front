@@ -35,7 +35,7 @@ export const ShoppingListItem = ({
   }
 
   return (
-    <li className="py-2 px-8 max-w-[480px] flex gap-2 items-center">
+    <li className="flex max-w-[480px] items-center gap-2 px-8 py-2">
       <Checkbox color="cyan" radius="lg" styles={styles.checkbox} checked={isChecked} onChange={toggleCheck} />
       <input
         type="text"

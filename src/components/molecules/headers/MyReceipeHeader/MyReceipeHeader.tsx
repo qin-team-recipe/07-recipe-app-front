@@ -15,7 +15,7 @@ interface MyReceipeHeaderProps {
  */
 export const MyReceipeHeader = ({ close, draft, create, isExistDraft, isEditing }: MyReceipeHeaderProps) => {
   return (
-    <div className="flex justify-between items-center bg-Mauve-01 py-[12px] px-[16px] max-w-[480px]">
+    <div className="flex max-w-[480px] items-center justify-between bg-Mauve-01 px-[16px] py-[12px]">
       <Image
         src="assets/icons/close.svg"
         className="cursor-pointer"

@@ -24,8 +24,8 @@ export const RecipePreviewCard = ({ index, imagePath, previewTitle, previewConte
   return (
     <div className={`w-[${PIC_SIZE[size]}px] h-[${H_SIZE[size]}px]`}>
       <Image width={PIC_SIZE[size]} height={PIC_SIZE[size]} src={imagePath} alt={`レシピ画像${index}`}></Image>
-      <p className="text-Mauve-12 text-fs12 my-2 font-bold leading-3 line-clamp-2">{previewTitle}</p>
-      <p className="text-Mauve-11 text-fs10 font-normal leading-[10px] line-clamp-1">{previewContent}</p>
+      <p className="my-2 line-clamp-2 text-fs12 font-bold leading-3 text-Mauve-12">{previewTitle}</p>
+      <p className="line-clamp-1 text-fs10 font-normal leading-[10px] text-Mauve-11">{previewContent}</p>
     </div>
   )
 }
