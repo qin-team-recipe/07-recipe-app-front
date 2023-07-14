@@ -10,15 +10,15 @@ export const Tab = ({ tabItems }: TabProps) => {
   const [activeTab, setActiveTab] = useState<string>("item1")
 
   return (
-    <div className="max-w-[480px] w-full">
+    <div className="w-full max-w-[480px]">
       <ul className="flex">
         {tabItems.map(({ label }, index) => {
           return (
             <li className="w-full" key={`item${index + 1}`}>
               <button
                 className={[
-                  "w-full h-10 text-fs16 text-Mauve-12 text-center font-bold",
-                  activeTab === `item${index + 1}` && "border-b-2 border-0 border-Mauve-12",
+                  "h-10 w-full text-center text-fs16 font-bold text-Mauve-12",
+                  activeTab === `item${index + 1}` && "border-0 border-b-2 border-Mauve-12",
                 ].join(" ")}
                 onClick={() => setActiveTab(`item${index + 1}`)}
               >

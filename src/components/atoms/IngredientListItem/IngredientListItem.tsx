@@ -29,10 +29,10 @@ export const IngredientListItem = ({
   }
 
   return (
-    <li className="py-2 px-4 max-w-[480px] h-[49px] flex justify-between items-center">
+    <li className="flex h-[49px] max-w-[480px] items-center justify-between px-4 py-2">
       <div>
-        <h3 className="text-Mauve-12 text-fs14 leading-[17px]">{name}</h3>
-        {description && <p className="text-Mauve-10 text-fs10 leading-[12px] mt-1">{description}</p>}
+        <h3 className="text-fs14 leading-[17px] text-Mauve-12">{name}</h3>
+        {description && <p className="mt-1 text-fs10 leading-[12px] text-Mauve-10">{description}</p>}
       </div>
       {isUseCartButton && (
         <button type="button" onClick={handleClick}>

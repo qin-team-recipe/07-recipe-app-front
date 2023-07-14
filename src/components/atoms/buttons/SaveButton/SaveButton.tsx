@@ -9,7 +9,7 @@ export const SaveButton = ({ innerText, onClick, type }: SaveButtonProps) => {
     <button
       className={`h-[35px] w-[171px] rounded text-fs16
         ${type === "primary" && "bg-Tomato-09 text-Mauve-01"}
-        ${type === "secondary" && "text-Tomato-11 border-Tomato-07 border-solid border-[1px]"}
+        ${type === "secondary" && "border-[1px] border-solid border-Tomato-07 text-Tomato-11"}
       `}
       onClick={onClick}
     >

@@ -6,13 +6,13 @@ export interface RecipeStepItemProps {
 
 export const RecipeStepItem = ({ index, title, description }: RecipeStepItemProps) => {
   return (
-    <li className="list-none py-2 px-4 border-0 border-b-[1px] border-Mauve-07 border-solid flex max-w-[480px] box-border">
-      <p className="text-Mauve-01 text-fs12 leading-[18px] text-center my-0 w-[18px] h-[18px] bg-Tomato-11 rounded-full">
+    <li className="box-border flex max-w-[480px] list-none border-0 border-b-[1px] border-solid border-Mauve-07 px-4 py-2">
+      <p className="my-0 h-[18px] w-[18px] rounded-full bg-Tomato-11 text-center text-fs12 leading-[18px] text-Mauve-01">
         {index}
       </p>
       <div className="ml-2 flex-1">
-        <h3 className="text-Mauve-12 text-fs14 leading-[18px] my-0">{title}</h3>
-        <p className="text-Mauve-10 text-fs10 leading-4 mb-0 mt-1">{description}</p>
+        <h3 className="my-0 text-fs14 leading-[18px] text-Mauve-12">{title}</h3>
+        <p className="mb-0 mt-1 text-fs10 leading-4 text-Mauve-10">{description}</p>
       </div>
     </li>
   )

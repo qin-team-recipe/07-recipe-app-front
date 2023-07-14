@@ -6,9 +6,9 @@ interface FavoriteCountProps {
 
 export const FavoriteCount = (props: FavoriteCountProps) => {
   return (
-    <div className="absolute top-2 right-2 flex p-[6px] bg-Mauve-alpha-10 rounded-2xl bg-opacity-50">
+    <div className="absolute right-2 top-2 flex rounded-2xl bg-Mauve-alpha-10 bg-opacity-50 p-[6px]">
       <Image src="assets/icons/heart.svg" alt="お気に入り数" width={14} height={14} />
-      <p className="text-Mauve-01 text-fs14 leading-none ml-1 font-inter">{props.count.toLocaleString()}</p>
+      <p className="ml-1 font-inter text-fs14 leading-none text-Mauve-01">{props.count.toLocaleString()}</p>
     </div>
   )
 }

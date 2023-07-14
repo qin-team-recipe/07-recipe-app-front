@@ -8,7 +8,7 @@ import { Loader } from "@mantine/core"
 
 export default function Spinner() {
   return (
-    <div className="flex justify-center my-32">
+    <div className="my-32 flex justify-center">
       <Loader size="xl" color="blue" />
     </div>
   )
