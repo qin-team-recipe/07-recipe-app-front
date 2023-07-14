@@ -7,9 +7,8 @@ interface LoginTopProps {
 
 export const LoginTop = ({ type }: LoginTopProps) => {
   return (
-    <div className="flex flex-col gap-5 items-center">
-      {type === "favorite" && <Image src="assets/images/login_favorite.png" width={200} height={200} alt="LoginTop" />}
-      {type === "shopping" && <Image src="assets/images/login_shopping.png" width={200} height={200} alt="LoginTop" />}
+    <div className="flex flex-col items-center gap-5">
+      <Image src={`assets/images/login_${type}.png`} width={200} height={200} alt="LoginTop" />
       <div className="flex flex-col items-center gap-3">
         <p className="text-fs16 font-bold">ログインをお願いします</p>
         <p className="text-fs14">こちらの機能を利用するにはログインが必要です</p>
