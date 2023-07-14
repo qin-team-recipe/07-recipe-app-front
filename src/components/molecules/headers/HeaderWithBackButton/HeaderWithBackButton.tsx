@@ -13,7 +13,7 @@ const HeaderWithBackButton = ({ title, isUseBackButton }: HeaderWithBackButtonPr
   return (
     <header className="relative flex h-12 max-w-[480px] items-center justify-center border-0 border-b-[1px] border-solid border-Mauve-06 ">
       {isUseBackButton && <BackButton color="black" className="absolute left-4 top-3" />}
-      <h1 className="text-fs20 font-bold leading-6 text-Mauve-12">{title}</h1>
+      <h1 className="text-xl font-bold text-Mauve-12">{title}</h1>
     </header>
   )
 }
