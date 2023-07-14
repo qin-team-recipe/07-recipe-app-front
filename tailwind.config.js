@@ -35,14 +35,6 @@ module.exports = {
       "Blue-alpha-11": "#0066DB", // Blue/Light Alpha/11
       "Blue-light-10": "#0081F1", // Blue/Light/10
     },
-    fontSize: {
-      fs10: "10px",
-      fs12: "12px",
-      fs14: "14px",
-      fs16: "16px",
-      fs20: "20px",
-      fs24: "24px",
-    },
   },
   plugins: [],
   corePlugins: {
