@@ -16,7 +16,7 @@ export const SocialLoginButton = ({ platform = "google", onClick }: SocialLoginB
       onClick={onClick}
     >
       <Image className="mr-1" src={`assets/icons/${platform}.svg`} width={16} height={16} alt={`${platform}Icon`} />
-      {platform.charAt(0).toUpperCase() + platform.slice(1)}でログイン
+      {platform.charAt(0).toUpperCase() + platform.slice(1)}ログイン
     </button>
   )
 }
