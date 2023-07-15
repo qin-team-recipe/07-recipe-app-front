@@ -15,7 +15,7 @@ export const TextButton = ({ innerText, onClick, disabled = false, primary = tru
 
   return (
     <button
-      className={["text-fs16  font-bold font-sans mx-[8px] my-0", textColor, className, disabled && "opacity-20"].join(
+      className={["mx-[8px]  my-0 font-sans text-fs16 font-bold", textColor, className, disabled && "opacity-20"].join(
         " ",
       )}
       onClick={onClick}

@@ -9,7 +9,7 @@ export const SocialLoginButton = ({ platform = "google", onClick }: SocialLoginB
   return (
     <button
       type="button"
-      className={`text-fs14 text-White font-bold rounded cursor-pointer py-2 px-3 flex items-center
+      className={`flex cursor-pointer items-center rounded px-3 py-2 text-fs14 font-bold text-White
       ${platform === "google" && "bg-Blue-light-10"}
       ${platform === "apple" && "bg-Mauve-12"}
       `}
