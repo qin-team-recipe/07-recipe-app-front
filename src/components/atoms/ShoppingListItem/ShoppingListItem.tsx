@@ -39,13 +39,13 @@ export const ShoppingListItem = ({
       <Checkbox color="cyan" radius="lg" styles={styles.checkbox} checked={isChecked} onChange={toggleCheck} />
       <input
         type="text"
-        className={`text-fs14 ${checkboxTextColor}`}
+        className={`text-sm ${checkboxTextColor}`}
         value={itemName}
         onChange={handleNameChange}
         readOnly={!isEditing}
       />
       {isShowDeleteButton && (
-        <button type="button" className="text-fs14 text-Tomato-09" onClick={onDelete}>
+        <button type="button" className="text-sm text-Tomato-09" onClick={onDelete}>
           削除
         </button>
       )}

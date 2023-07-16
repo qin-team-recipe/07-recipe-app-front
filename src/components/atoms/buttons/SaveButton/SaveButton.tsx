@@ -7,7 +7,7 @@ interface SaveButtonProps {
 export const SaveButton = ({ innerText, onClick, type }: SaveButtonProps) => {
   return (
     <button
-      className={`h-[35px] w-[171px] rounded text-fs16
+      className={`h-[35px] w-[171px] rounded text-base
         ${type === "primary" && "bg-Tomato-09 text-Mauve-01"}
         ${type === "secondary" && "border-[1px] border-solid border-Tomato-07 text-Tomato-11"}
       `}

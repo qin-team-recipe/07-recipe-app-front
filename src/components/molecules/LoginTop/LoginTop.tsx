@@ -10,8 +10,8 @@ export const LoginTop = ({ type }: LoginTopProps) => {
     <div className="flex flex-col items-center gap-5">
       <Image src={`assets/images/login_${type}.png`} width={200} height={200} alt="LoginTop" />
       <div className="flex flex-col items-center gap-3">
-        <p className="text-fs16 font-bold">ログインをお願いします</p>
-        <p className="text-fs14">こちらの機能を利用するにはログインが必要です</p>
+        <p className="text-base font-bold">ログインをお願いします</p>
+        <p className="text-sm">こちらの機能を利用するにはログインが必要です</p>
       </div>
       <div className="flex justify-center gap-3">
         <SocialLoginButton platform="google" />

@@ -25,7 +25,7 @@ export const FollowOrFavoriteButton = ({
 
   return (
     <button
-      className={`h-[25px] rounded px-3 text-fs14
+      className={`h-[25px] rounded px-3 text-sm
         ${isActive && "bg-Tomato-09 text-Mauve-01"}
         ${!isActive && "border-[1px] border-solid border-Tomato-07 text-Tomato-11"}
       `}
