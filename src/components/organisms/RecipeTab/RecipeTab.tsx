@@ -33,7 +33,7 @@ export const RecipeTab = () => {
   return (
     <div className="mx-4 my-5 grid w-[358px]  grid-cols-2 gap-x-3 gap-y-4 ">
       {dummyData.map((v) => (
-        <RecipeListItem recipe={v} key={v.index}></RecipeListItem>
+        <RecipeListItem recipe={v} size="MEDIUM" key={v.index}></RecipeListItem>
       ))}
     </div>
   )

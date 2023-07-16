@@ -12,9 +12,10 @@ type RecipeListItemProps = {
     content: string
     count: number
   }
+  size: "SMALL" | "MEDIUM" | "LARGE"
 }
 
-export const RecipeListItem = ({ recipe }: RecipeListItemProps) => {
+export const RecipeListItem = ({ recipe, size }: RecipeListItemProps) => {
   return (
     <Link href={recipe.linkUrl} className="relative">
       <RecipePreviewCard
@@ -22,7 +23,7 @@ export const RecipeListItem = ({ recipe }: RecipeListItemProps) => {
         imagePath={recipe.imagePath}
         previewTitle={recipe.title}
         previewContent={recipe.content}
-        size="MEDIUM"
+        size={size}
       />
       <FavoriteCount count={recipe.count} />
     </Link>
