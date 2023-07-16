@@ -10,7 +10,7 @@ interface FavoriteChefListProps {
 export const FavoriteChefList = ({ chefs }: FavoriteChefListProps) => {
   return (
     <section>
-      <p className="text-fs20 font-bold mb-3">シェフ</p>
+      <p className="text-xl font-bold mb-3">シェフ</p>
       <ul className="flex gap-4 max-w-[480px] overflow-x-scroll">
         {chefs.map((chef, index) => (
           <li key={index}>
