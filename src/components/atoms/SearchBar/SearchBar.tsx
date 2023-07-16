@@ -16,7 +16,7 @@ export const SearchBar = () => {
   return (
     <div className="h-14 w-[390px] gap-4 px-4 py-2">
       <div className="flex shrink grow  gap-2 self-stretch rounded-lg bg-Mauve-04 px-3 py-2">
-        <Image width={24} height={24} alt="seach_icon" src="assets/icons/search.svg"></Image>
+        <Image width={24} height={24} alt="seach_icon" src="assets/icons/search.svg" />
         <input
           type="text"
           placeholder="シェフやレシピを検索"
@@ -24,9 +24,7 @@ export const SearchBar = () => {
           value={text}
           onChange={handleTextareaChange}
         />
-        {text && (
-          <Image width={24} height={24} alt="close_icon" src="assets/icons/close.svg" onClick={clearText}></Image>
-        )}
+        {text && <Image width={24} height={24} alt="close_icon" src="assets/icons/close.svg" onClick={clearText} />}
       </div>
     </div>
   )
