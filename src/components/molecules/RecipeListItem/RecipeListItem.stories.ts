@@ -21,6 +21,7 @@ export const レシピプレビュー: Story = {
       content: "ウルトラハイパー超すごいしまぶーシェフ",
       count: 1,
     },
+    size: "MEDIUM",
   },
 }
 export const レシピプレビュー_長文: Story = {
@@ -35,5 +36,6 @@ export const レシピプレビュー_長文: Story = {
         "ウルトラハイパー超すごいしまぶーシェフ、ウルトラハイパー超すごいしまぶーシェフ、ウルトラハイパー超すごいしまぶーシェフ",
       count: 99999999,
     },
+    size: "MEDIUM",
   },
 }
