@@ -9,7 +9,7 @@ interface IngredientMenuProps {
 }
 
 export const IngredientMenu = ({ showMoveUp, showMoveDown, showEdit }: IngredientMenuProps) => {
-  const commonColor = "#6F6E77"
+  const commonColor = "text-Mauve-11"
   return (
     <Menu position="bottom-end" width={258}>
       <Menu.Target>
@@ -19,22 +19,22 @@ export const IngredientMenu = ({ showMoveUp, showMoveDown, showEdit }: Ingredien
 
       <Menu.Dropdown>
         {showEdit && (
-          <Menu.Item color={commonColor} icon={<Pencil />}>
+          <Menu.Item className={commonColor} icon={<Pencil />}>
             編集する
           </Menu.Item>
         )}
         {showMoveUp && (
-          <Menu.Item color={commonColor} icon={<ChevronUp />}>
+          <Menu.Item className={commonColor} icon={<ChevronUp />}>
             上に移動する
           </Menu.Item>
         )}
         {showMoveDown && (
-          <Menu.Item color={commonColor} icon={<ChevronDown />}>
+          <Menu.Item className={commonColor} icon={<ChevronDown />}>
             下に移動する
           </Menu.Item>
         )}
         <Menu.Divider />
-        <Menu.Item color={commonColor} icon={<Trash />}>
+        <Menu.Item className={commonColor} icon={<Trash />}>
           リストから削除する
         </Menu.Item>
       </Menu.Dropdown>
