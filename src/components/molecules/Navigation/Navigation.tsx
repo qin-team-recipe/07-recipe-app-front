@@ -17,20 +17,20 @@ const NavigationItems = [
   {
     title: "検索",
     slug: NOW_SLUG.SEARCH_PAGE,
-    iconGray: "search_gray.svg",
-    iconRed: "search_red.svg",
+    iconGray: "assets/icons/navigation/search_gray.svg",
+    iconRed: "assets/icons/navigation/search_red.svg",
   },
   {
     title: "お気に入り",
     slug: NOW_SLUG.FAVORITE_PAGE,
-    iconGray: "heart_gray.svg",
-    iconRed: "heart_red.svg",
+    iconGray: "assets/icons/navigation/heart_gray.svg",
+    iconRed: "assets/icons/navigation/heart_red.svg",
   },
   {
     title: "お買い物",
     slug: NOW_SLUG.SHOPPING_PAGE,
-    iconGray: "cart_gray.svg",
-    iconRed: "cart_red.svg",
+    iconGray: "assets/icons/navigation/cart_gray.svg",
+    iconRed: "assets/icons/navigation/cart_red.svg",
   },
 ]
 
