@@ -11,6 +11,6 @@ const meta: Meta<typeof ImageSelector> = {
 export default meta
 type Story = StoryObj<typeof ImageSelector>
 
-export const YoutubeLinkItem: Story = {
+export const Normal: Story = {
   args: {},
 }
