@@ -15,7 +15,7 @@ export const DetailTop = ({ name, content, url }: DetailTopProps) => {
       <div className="mb-4 relative aspect-square">
         <Image src={url} fill className="object-cover" alt="TopImage" />
       </div>
-      <p className="text-Mauve-12 text-fs22 px-4 mb-3 font-bold">{name}</p>
+      <p className="text-Mauve-12 text-xl px-4 mb-3 font-bold">{name}</p>
       <p className="text-Mauve-12 text-base px-4 mb-4 font-normal">{content}</p>
     </div>
   )
