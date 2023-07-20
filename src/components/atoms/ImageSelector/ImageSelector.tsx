@@ -15,15 +15,13 @@ export const ImageSelector = ({
   }
 
   return (
-    <form>
-      <label htmlFor="file-upload" className="cursor-pointer">
-        <input id="file-upload" type="file" className="hidden" onChange={handleFileChange} />
+    <label htmlFor="file-upload" className="cursor-pointer">
+      <input id="file-upload" type="file" className="hidden" onChange={handleFileChange} />
 
-        <div className="w-[100px] h-[100px] bg-white rounded-lg border border-Mauve-06 flex-col justify-center items-center gap-[5px] inline-flex">
-          <div className="text-Mauve-11 text-fs12 font-normal">画像を設定</div>
-          <Image width={20} height={20} alt="plus_icon" src="/assets/icons/plus.svg" />
-        </div>
-      </label>
-    </form>
+      <div className="w-[100px] h-[100px] bg-white rounded-lg border border-Mauve-06 flex-col justify-center items-center gap-[5px] inline-flex">
+        <div className="text-Mauve-11 text-fs12 font-normal">画像を設定</div>
+        <Image width={20} height={20} alt="plus_icon" src="/assets/icons/plus.svg" />
+      </div>
+    </label>
   )
 }
