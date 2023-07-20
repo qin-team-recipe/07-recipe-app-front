@@ -16,7 +16,7 @@ export const ImageSelector = ({
 
   return (
     <form>
-      <label htmlFor="file-upload">
+      <label htmlFor="file-upload" className="cursor-pointer">
         <input id="file-upload" type="file" className="hidden" onChange={handleFileChange} />
 
         <div className="w-[100px] h-[100px] bg-white rounded-lg border border-Mauve-06 flex-col justify-center items-center gap-[5px] inline-flex">
