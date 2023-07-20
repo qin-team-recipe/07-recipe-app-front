@@ -20,7 +20,7 @@ export const SearchBar = () => {
         <input
           type="text"
           placeholder="シェフやレシピを検索"
-          className="shrink grow bg-Mauve-04 text-fs16 font-bold leading-normal text-Mauve-12"
+          className="shrink grow bg-Mauve-04 text-base font-bold text-Mauve-12"
           value={text}
           onChange={handleTextareaChange}
         />
