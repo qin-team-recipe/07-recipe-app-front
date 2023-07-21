@@ -1,4 +1,4 @@
-import { FollowOrFavoriteButton } from "./FollowOrFavoriteButton"
+import { BUTTON_TYPE, FollowOrFavoriteButton } from "./FollowOrFavoriteButton"
 
 import type { Meta, StoryObj } from "@storybook/react"
 
@@ -13,28 +13,28 @@ type Story = StoryObj<typeof FollowOrFavoriteButton>
 
 export const フォローする: Story = {
   args: {
-    type: "follow",
+    buttonType: BUTTON_TYPE.FOLLOW,
     isFollowOrFavorite: false,
   },
 }
 
 export const フォロー中: Story = {
   args: {
-    type: "follow",
+    buttonType: BUTTON_TYPE.FOLLOW,
     isFollowOrFavorite: true,
   },
 }
 
 export const お気に入りに追加: Story = {
   args: {
-    type: "favorite",
+    buttonType: BUTTON_TYPE.FAVORITE,
     isFollowOrFavorite: false,
   },
 }
 
 export const お気に入りから削除: Story = {
   args: {
-    type: "favorite",
+    buttonType: BUTTON_TYPE.FAVORITE,
     isFollowOrFavorite: true,
   },
 }
