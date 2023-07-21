@@ -13,14 +13,14 @@ const H_SIZE = {
 } as const
 
 type RecipePreviewCardProps = Required<{
-  index: number
+  id: string
   imagePath: string
   previewTitle: string
   previewContent: string
   size: keyof typeof PIC_SIZE
 }>
 
-export const RecipePreviewCard = ({ index, imagePath, previewTitle, previewContent, size }: RecipePreviewCardProps) => {
+export const RecipePreviewCard = ({ id, imagePath, previewTitle, previewContent, size }: RecipePreviewCardProps) => {
   return (
     <div className={`w-[${PIC_SIZE[size]}px] h-[${H_SIZE[size]}px]`}>
       <Image width={PIC_SIZE[size]} height={PIC_SIZE[size]} src={imagePath} alt={`レシピ画像${index}`}></Image>
