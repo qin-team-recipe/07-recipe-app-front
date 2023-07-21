@@ -1,17 +1,14 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const NOW_SLUG = {
-  SEARCH_PAGE: "",
-  FAVORITE_PAGE: "favorite",
-  SHOPPING_PAGE: "shopping",
+  SEARCH_PAGE: "/",
+  FAVORITE_PAGE: "/favorite",
+  SHOPPING_PAGE: "/shopping",
 } as const
-
-type NowSlugType = typeof NOW_SLUG
-
-type NavigationProps = {
-  nowSlug: NowSlugType[keyof NowSlugType]
-}
 
 const NavigationItems = [
   {
@@ -34,21 +31,22 @@ const NavigationItems = [
   },
 ]
 
-export const Navigation = ({ nowSlug }: NavigationProps) => {
+export const Navigation = () => {
+  const currentPath = usePathname()
   return (
-    <nav className="w-[400px] text-center py-2">
+    <nav className="w-[400px] text-center py-2  sticky bottom-0 bg-Mauve-01">
       <ul className="text-Mauve-11  text-xs  m-auto flex  h-12">
         {NavigationItems.map((item, index) => (
           <li key={index} className="flex-1">
-            <Link href={item.slug} className={nowSlug === item.slug ? "pointer-events-none" : ""}>
+            <Link href={item.slug} className={currentPath === item.slug ? "pointer-events-none" : ""}>
               <Image
-                src={nowSlug === item.slug ? item.iconRed : item.iconGray}
+                src={currentPath === item.slug ? item.iconRed : item.iconGray}
                 width={24}
                 height={24}
                 alt={item.slug}
                 className="m-auto"
               />
-              <p className={nowSlug === item.slug ? "text-Tomato-12" : ""}>{item.title}</p>
+              <p className={currentPath === item.slug ? "text-Tomato-12" : ""}>{item.title}</p>
             </Link>
           </li>
         ))}
