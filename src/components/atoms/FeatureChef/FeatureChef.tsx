@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-interface FeatureChefProps {
+type FeatureChefProps = {
   icon: string
   name: string
   url: string
