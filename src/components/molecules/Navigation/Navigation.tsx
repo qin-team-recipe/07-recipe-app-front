@@ -36,8 +36,8 @@ export const Navigation = () => {
   if (!Object.values<string>(NOW_SLUG).includes(currentPath)) return <></>
 
   return (
-    <nav className="w-full md:max-w-[480px] text-center py-2  fixed bottom-0 bg-Mauve-01">
-      <ul className="text-Mauve-11  text-xs flex">
+    <nav className="fixed bottom-0 w-full bg-Mauve-01  py-2 text-center md:max-w-[480px]">
+      <ul className="flex  text-xs text-Mauve-11">
         {NavigationItems.map((item, index) => (
           <li key={index} className="flex-1">
             <Link href={item.slug} className={currentPath === item.slug ? "pointer-events-none" : ""}>

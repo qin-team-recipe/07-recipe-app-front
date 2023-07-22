@@ -18,8 +18,8 @@ export const ImageSelector = ({
     <label htmlFor="file-upload" className="cursor-pointer">
       <input id="file-upload" type="file" className="hidden" onChange={handleFileChange} />
 
-      <div className="w-[100px] h-[100px] bg-white rounded-lg border border-Mauve-06 flex-col justify-center items-center gap-[5px] inline-flex">
-        <div className="text-Mauve-11 text-xs">画像を設定</div>
+      <div className="bg-white inline-flex h-[100px] w-[100px] flex-col items-center justify-center gap-[5px] rounded-lg border border-Mauve-06">
+        <div className="text-xs text-Mauve-11">画像を設定</div>
         <Image width={20} height={20} alt="plus_icon" src="/assets/icons/plus.svg" />
       </div>
     </label>

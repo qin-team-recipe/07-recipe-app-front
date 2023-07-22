@@ -29,9 +29,9 @@ const dummyData = [
 
 export const FeatureChefList = () => {
   return (
-    <ul className={"flex flex-nowrap overflow-x-auto max-w-[480px] gap-4  justify-between"}>
+    <ul className={"flex max-w-[480px] flex-nowrap justify-between gap-4  overflow-x-auto"}>
       {dummyData.map((chef) => (
-        <li key={chef.id} className="max-w-[140px] min-w-[140px]">
+        <li key={chef.id} className="min-w-[140px] max-w-[140px]">
           <FeatureChef icon={chef.icon} name={chef.name} url={chef.url} />
         </li>
       ))}

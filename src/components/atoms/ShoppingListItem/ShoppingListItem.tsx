@@ -1,7 +1,8 @@
 "use client"
 
-import { Checkbox } from "@mantine/core"
 import { useState } from "react"
+
+import { Checkbox } from "@mantine/core"
 
 interface ShoppingListItemProps {
   name: string
