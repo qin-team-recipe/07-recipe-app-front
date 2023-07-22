@@ -8,7 +8,7 @@ import { ReduxProvider } from "@/libs/ReduxProvider"
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className="bg-Mauve-01">
+      <body className="bg-Mauve-01 md:w-[480px]  mx-auto">
         <ReduxProvider>
           <MantineProviderWrapper>
             <div className="mx-4 my-2">{children}</div>

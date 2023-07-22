@@ -17,7 +17,7 @@ export const ChefCard = ({ chef }: ChefCardProps) => {
     <>
       <Link key={chef.name} href={chef.url} className="flex gap-4">
         <Image src={chef.icon} width={88} height={116} alt="kitchenIcon" className="rounded-2xl" />
-        <div className="h-14 w-64 text-sm">
+        <div className="h-14 max-w-64 text-sm">
           <h1 className="text-lg font-bold">{chef.name}</h1>
           <p className="my-1 line-clamp-3  text-Mauve-10">{chef.text}</p>
           <div className="flex">

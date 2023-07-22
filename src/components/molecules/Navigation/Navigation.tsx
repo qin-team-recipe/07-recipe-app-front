@@ -34,8 +34,8 @@ const NavigationItems = [
 export const Navigation = () => {
   const currentPath = usePathname()
   return (
-    <nav className="w-[400px] text-center py-2  fixed bottom-0 bg-Mauve-01">
-      <ul className="text-Mauve-11  text-xs  m-auto flex">
+    <nav className="w-full md:max-w-[480px] text-center py-2  fixed bottom-0 bg-Mauve-01">
+      <ul className="text-Mauve-11  text-xs flex">
         {NavigationItems.map((item, index) => (
           <li key={index} className="flex-1">
             <Link href={item.slug} className={currentPath === item.slug ? "pointer-events-none" : ""}>
