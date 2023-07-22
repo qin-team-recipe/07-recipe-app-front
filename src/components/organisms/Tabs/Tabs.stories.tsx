@@ -1,16 +1,16 @@
-import { Tab } from "./Tab"
+import { Tabs } from "./Tabs"
 import SampleTabContent from "./_SampleTabContent"
 
 import type { Meta, StoryObj } from "@storybook/react"
 
-const meta: Meta<typeof Tab> = {
-  title: "Organisms/Tab",
-  component: Tab,
+const meta: Meta<typeof Tabs> = {
+  title: "Organisms/Tabs",
+  component: Tabs,
   tags: ["autodocs"],
 }
 
 export default meta
-type Story = StoryObj<typeof Tab>
+type Story = StoryObj<typeof Tabs>
 
 export const three_tabs: Story = {
   args: {
