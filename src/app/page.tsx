@@ -1,5 +1,4 @@
-import { SearchBar } from "../components/atoms/SearchBar/SearchBar"
-
+import { SearchBar } from "@/components/atoms/SearchBar/SearchBar"
 import { SectionTitle } from "@/components/atoms/SectionTitle/SectionTitle"
 import { FeatureChefList } from "@/components/molecules/FeatureChefList/FeatureChefList"
 import { OtherChefList } from "@/components/molecules/OtherChefList/OtherChefList"
