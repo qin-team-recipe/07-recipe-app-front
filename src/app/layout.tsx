@@ -8,10 +8,10 @@ import { ReduxProvider } from "@/libs/ReduxProvider"
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body>
+      <body className="bg-Mauve-01">
         <ReduxProvider>
           <MantineProviderWrapper>
-            <div className="mx-4 my-2 bg-Mauve-01">{children}</div>
+            <div className="mx-4 my-2">{children}</div>
             <Navigation />
           </MantineProviderWrapper>
         </ReduxProvider>
