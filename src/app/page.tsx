@@ -18,7 +18,7 @@ export default function SearchPage() {
       <section className="mb-10 grid grid-cols-2 gap-4">
         <SectionTitle text="話題のレシピ" fontSize="xl" heading="h1" />
         <div className="flex justify-end">
-          <LoadMoreButton />
+          <LoadMoreButton url="/MoreSearchPage" />
         </div>
         <div className="col-span-2">
           <RecipeList horizontalScroll />
@@ -27,7 +27,7 @@ export default function SearchPage() {
       <section className="mb-10 grid grid-cols-2 gap-4">
         <SectionTitle text="シェフ" fontSize="xl" heading="h1" />
         <div className="flex justify-end">
-          <LoadMoreButton />
+          <LoadMoreButton url="" />
         </div>
         <div className="col-span-2">
           <OtherChefList />
