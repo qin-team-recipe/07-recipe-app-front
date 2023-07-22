@@ -12,7 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ReduxProvider>
           <MantineProviderWrapper>
             <div className="mx-4 my-2">{children}</div>
-            <Navigation />
+            <div className="md:hidden">
+              <Navigation />
+            </div>
           </MantineProviderWrapper>
         </ReduxProvider>
       </body>
