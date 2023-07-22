@@ -33,6 +33,8 @@ const NavigationItems = [
 
 export const Navigation = () => {
   const currentPath = usePathname()
+  if (!Object.values<string>(NOW_SLUG).includes(currentPath)) return <></>
+
   return (
     <nav className="w-full md:max-w-[480px] text-center py-2  fixed bottom-0 bg-Mauve-01">
       <ul className="text-Mauve-11  text-xs flex">
