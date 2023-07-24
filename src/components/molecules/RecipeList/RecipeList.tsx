@@ -42,8 +42,8 @@ export const RecipeList = (props: RecipeListProps) => {
   return (
     <ul
       className={
-        (props.horizontalScroll ? "flex flex-nowrap overflow-x-auto" : "flex flex-wrap") +
-        " max-w-[480px] justify-between  gap-4"
+        (props.horizontalScroll ? "flex flex-nowrap overflow-x-auto " : "flex flex-wrap justify-center ") +
+        "max-w-[480px] gap-3"
       }
     >
       {dummyData.map((recipe) => (
