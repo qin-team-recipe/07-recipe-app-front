@@ -47,7 +47,7 @@ export const RecipeList = (props: RecipeListProps) => {
       }
     >
       {dummyData.map((recipe) => (
-        <li key={recipe.id} className="min-w-[140px] max-w-[140px]">
+        <li key={recipe.id} className="min-w-[173px] max-w-[173px]">
           <RecipeListItem recipe={recipe} />
         </li>
       ))}
