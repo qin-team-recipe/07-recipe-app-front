@@ -15,7 +15,7 @@ type RecipeListItemProps = {
 }
 
 export const RecipeListItem = ({ recipe }: RecipeListItemProps) => (
-  <Link href={recipe.linkUrl} className="relative">
+  <Link href={recipe.linkUrl} className="relative block">
     <RecipePreviewCard
       id={recipe.id}
       imagePath={recipe.imagePath}
