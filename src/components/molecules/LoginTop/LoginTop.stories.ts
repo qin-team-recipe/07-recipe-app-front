@@ -1,6 +1,6 @@
-import { LoginTop } from "@/components/molecules/LoginTop/LoginTop"
-
 import type { Meta, StoryObj } from "@storybook/react"
+
+import { LoginTop } from "@/components/molecules/LoginTop/LoginTop"
 
 const meta: Meta<typeof LoginTop> = {
   title: "Molecules/LoginTop",

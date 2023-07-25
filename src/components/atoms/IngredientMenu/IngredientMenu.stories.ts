@@ -1,6 +1,6 @@
-import { IngredientMenu } from "@/components/atoms/IngredientMenu/IngredientMenu"
-
 import type { Meta, StoryObj } from "@storybook/react"
+
+import { IngredientMenu } from "@/components/atoms/IngredientMenu/IngredientMenu"
 
 const meta: Meta<typeof IngredientMenu> = {
   title: "Atoms/IngredientMenu",

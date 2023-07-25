@@ -1,6 +1,6 @@
-import { FavoriteChefList } from "@/components/molecules/FavoriteChefList/FavoriteChefList"
-
 import type { Meta, StoryObj } from "@storybook/react"
+
+import { FavoriteChefList } from "@/components/molecules/FavoriteChefList/FavoriteChefList"
 
 const meta: Meta<typeof FavoriteChefList> = {
   title: "Molecules/FavoriteChefList",

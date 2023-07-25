@@ -1,5 +1,6 @@
-import { DetailTop } from "@/components/atoms/DetailTop/DetailTop"
 import type { Meta, StoryObj } from "@storybook/react"
+
+import { DetailTop } from "@/components/atoms/DetailTop/DetailTop"
 
 const meta: Meta<typeof DetailTop> = {
   title: "Atoms/DetailTop",
