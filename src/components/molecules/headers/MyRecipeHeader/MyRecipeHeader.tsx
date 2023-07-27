@@ -2,7 +2,7 @@ import Image from "next/image"
 
 import { TextButton } from "@/components/atoms/buttons/TextButton/TextButton"
 
-interface MyReceipeHeaderProps {
+interface MyRecipeHeaderProps {
   close: () => void
   draft: () => void
   create: () => void
@@ -13,7 +13,7 @@ interface MyReceipeHeaderProps {
 /**
  * マイレシピ作成時ヘッダー
  */
-export const MyReceipeHeader = ({ close, draft, create, isExistDraft, isEditing }: MyReceipeHeaderProps) => {
+export const MyRecipeHeader = ({ close, draft, create, isExistDraft, isEditing }: MyRecipeHeaderProps) => {
   return (
     <div className="flex max-w-[480px] items-center justify-between bg-Mauve-01 px-[16px] py-[12px]">
       <Image

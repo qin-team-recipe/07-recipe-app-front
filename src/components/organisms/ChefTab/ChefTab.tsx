@@ -4,7 +4,7 @@ import { OtherChefList } from "@/components/molecules/OtherChefList/OtherChefLis
 export function ChefTab() {
   return (
     <section>
-      <div className="mt-5 mb-2">
+      <div className="mb-2 mt-5">
         <SectionTitle text="シェフ一覧" fontSize="xl" heading="h2" />
       </div>
       <OtherChefList />

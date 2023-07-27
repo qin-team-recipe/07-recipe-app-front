@@ -12,11 +12,11 @@ interface DetailTopProps {
 export const DetailTop = ({ name, content, url }: DetailTopProps) => {
   return (
     <div className="max-w-[480px]">
-      <div className="mb-4 relative aspect-square">
+      <div className="relative mb-4 aspect-square">
         <Image src={url} fill className="object-cover" alt="TopImage" />
       </div>
-      <p className="text-Mauve-12 text-xl px-4 mb-3 font-bold">{name}</p>
-      <p className="text-Mauve-12 text-base px-4 mb-4 font-normal">{content}</p>
+      <p className="mb-3 px-4 text-xl font-bold text-Mauve-12">{name}</p>
+      <p className="mb-4 px-4 text-base font-normal text-Mauve-12">{content}</p>
     </div>
   )
 }

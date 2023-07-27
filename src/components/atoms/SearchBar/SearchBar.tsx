@@ -16,7 +16,7 @@ export const SearchBar = () => {
   return (
     <div className="max-w-[480px]">
       <div className="flex rounded-lg bg-Mauve-04 px-3 py-2">
-        <Image width={24} height={24} alt="seach_icon" src="assets/icons/search.svg" />
+        <Image width={24} height={24} alt="search_icon" src="assets/icons/search.svg" />
         <input
           type="text"
           placeholder="シェフやレシピを検索"

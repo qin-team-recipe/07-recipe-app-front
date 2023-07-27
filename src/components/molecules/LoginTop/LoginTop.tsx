@@ -1,5 +1,6 @@
-import { SocialLoginButton } from "@/components/atoms/buttons/SocialLoginButton/SocialLoginButton"
 import Image from "next/image"
+
+import { SocialLoginButton } from "@/components/atoms/buttons/SocialLoginButton/SocialLoginButton"
 
 interface LoginTopProps {
   type: "favorite" | "shopping"

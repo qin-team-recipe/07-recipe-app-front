@@ -1,15 +1,15 @@
-import { MyReceipeHeader } from "./MyReceipeHeader"
+import { MyRecipeHeader } from "./MyRecipeHeader"
 
 import type { Meta, StoryObj } from "@storybook/react"
 
-const meta: Meta<typeof MyReceipeHeader> = {
-  title: "Molecules/headers/MyReceipeHeader",
-  component: MyReceipeHeader,
+const meta: Meta<typeof MyRecipeHeader> = {
+  title: "Molecules/headers/MyRecipeHeader",
+  component: MyRecipeHeader,
   tags: ["autodocs"],
 }
 
 export default meta
-type Story = StoryObj<typeof MyReceipeHeader>
+type Story = StoryObj<typeof MyRecipeHeader>
 
 export const 下書きレシピあり_入力あり: Story = {
   args: {
