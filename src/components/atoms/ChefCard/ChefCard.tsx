@@ -2,30 +2,25 @@ import Image from "next/image"
 import Link from "next/link"
 
 type ChefCardProps = {
-  chef: {
-    id: string
-    icon: string
-    name: string
-    text: string
-    url: string
-    count: number
-  }
+  image: string
+  name: string
+  profile: string
+  url: string
+  numberOfRecipes: number
 }
 
-export const ChefCard = ({ chef }: ChefCardProps) => {
+export const ChefCard = (props: ChefCardProps) => {
   return (
-    <>
-      <Link key={chef.name} href={chef.url} className="flex gap-4">
-        <Image src={chef.icon} width={88} height={116} alt="kitchenIcon" className="rounded-2xl" />
-        <div className="h-14 max-w-64 text-sm">
-          <h1 className="text-lg font-bold">{chef.name}</h1>
-          <p className="my-1 line-clamp-3  text-Mauve-10">{chef.text}</p>
-          <div className="flex">
-            <Image src="/assets/icons/kitchen.svg" width={16} height={16} alt="kitchenIcon" className="rounded-2xl" />
-            <p className="ml-2 flex">{chef.count}レシピ</p>
-          </div>
+    <Link href={props.url} className="flex gap-4">
+      <Image src={props.image} width={88} height={116} alt="シェフ画像" className="rounded-2xl" />
+      <div className=" flex w-64 flex-col justify-between text-sm">
+        <h1 className="text-lg font-bold">{props.name}</h1>
+        <p className=" line-clamp-3  h-full text-Mauve-10">{props.profile}</p>
+        <div className="flex">
+          <Image src="/assets/icons/kitchen.svg" width={16} height={16} alt="kitchenIcon" />
+          <p className="ml-2">{props.numberOfRecipes}レシピ</p>
         </div>
-      </Link>
-    </>
+      </div>
+    </Link>
   )
 }

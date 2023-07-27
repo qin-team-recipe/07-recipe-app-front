@@ -42,7 +42,7 @@ export const RecipeList = (props: RecipeListProps) => {
   return (
     <ul
       className={
-        (props.horizontalScroll ? "flex flex-nowrap overflow-x-auto " : "flex flex-wrap") +
+        (props.horizontalScroll ? "flex flex-nowrap overflow-x-auto" : "flex flex-wrap") +
         " max-w-[480px] justify-between  gap-4"
       }
     >
