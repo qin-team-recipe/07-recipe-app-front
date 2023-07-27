@@ -14,8 +14,8 @@ export const SearchBar = () => {
   }
 
   return (
-    <div className="h-14 max-w-[390px] gap-4 px-4 py-2">
-      <div className="flex shrink grow  gap-2 self-stretch rounded-lg bg-Mauve-04 px-3 py-2">
+    <div className="max-w-[480px]">
+      <div className="flex rounded-lg bg-Mauve-04 px-3 py-2">
         <Image width={24} height={24} alt="seach_icon" src="assets/icons/search.svg" />
         <input
           type="text"

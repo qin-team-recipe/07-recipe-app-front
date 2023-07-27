@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        screen: ["100vh", "100dvh"],
+      },
+      minHeight: {
+        screen: ["100vh", "100dvh"],
+      },
+      maxHeight: {
+        screen: ["100vh", "100dvh"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

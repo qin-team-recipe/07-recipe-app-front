@@ -42,13 +42,13 @@ export const RecipeList = (props: RecipeListProps) => {
   return (
     <ul
       className={
-        (props.horizontalScroll ? "flex flex-nowrap overflow-x-auto " : "flex flex-wrap") +
-        " max-w-[480px] gap-4  justify-between"
+        (props.horizontalScroll ? "flex flex-nowrap overflow-x-auto" : "flex flex-wrap") +
+        " max-w-[480px] justify-between  gap-4"
       }
     >
-      {dummyData.map((v) => (
-        <li key={v.id} className="max-w-[173px] min-w-[173px]">
-          <RecipeListItem recipe={v} />
+      {dummyData.map((recipe) => (
+        <li key={recipe.id} className="min-w-[140px] max-w-[140px]">
+          <RecipeListItem recipe={recipe} />
         </li>
       ))}
     </ul>

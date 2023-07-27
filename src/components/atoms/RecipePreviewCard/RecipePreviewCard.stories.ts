@@ -13,7 +13,7 @@ type Story = StoryObj<typeof RecipePreviewCard>
 
 export const SmallCard: Story = {
   args: {
-    index: 1,
+    id: "aaaaa",
     imagePath: "assets/images/sample-meal.png",
     previewTitle: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
     previewContent: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -23,7 +23,7 @@ export const SmallCard: Story = {
 
 export const MediumCard: Story = {
   args: {
-    index: 1,
+    id: "bbbbbb",
     imagePath: "assets/images/sample-meal.png",
     previewTitle: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
     previewContent: "ウルトラハイパー超すごいしまぶーシェフ",
@@ -32,7 +32,7 @@ export const MediumCard: Story = {
 }
 export const LargeCard: Story = {
   args: {
-    index: 1,
+    id: "ccccc",
     imagePath: "assets/images/sample-meal.png",
     previewTitle: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
     previewContent: "ウルトラハイパー超すごいしまぶーシェフ",
