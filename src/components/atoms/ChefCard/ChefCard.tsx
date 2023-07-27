@@ -6,7 +6,7 @@ type ChefCardProps = {
   name: string
   profile: string
   url: string
-  numberOfRecipes: number
+  count: number
 }
 
 export const ChefCard = (props: ChefCardProps) => {
@@ -18,7 +18,7 @@ export const ChefCard = (props: ChefCardProps) => {
         <p className=" line-clamp-3  h-full text-Mauve-10">{props.profile}</p>
         <div className="flex">
           <Image src="/assets/icons/kitchen.svg" width={16} height={16} alt="kitchenIcon" />
-          <p className="ml-2">{props.numberOfRecipes}レシピ</p>
+          <p className="ml-2">{props.count}レシピ</p>
         </div>
       </div>
     </Link>

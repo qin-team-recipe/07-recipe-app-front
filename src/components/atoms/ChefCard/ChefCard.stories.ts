@@ -18,7 +18,7 @@ export const 説明３行: Story = {
     profile:
       "白ごはん.comを運営しています。アップしたレシピの紹介や、youtube動画、日々の食のこと、オリジナル商品などの案内等をブログでやっています。",
     url: "/",
-    numberOfRecipes: 123,
+    count: 123,
   },
 }
 export const 説明１行: Story = {
@@ -27,6 +27,6 @@ export const 説明１行: Story = {
     name: "山田シェフ",
     profile: "白ごはん.comを運営しています。",
     url: "/",
-    numberOfRecipes: 123,
+    count: 123,
   },
 }
