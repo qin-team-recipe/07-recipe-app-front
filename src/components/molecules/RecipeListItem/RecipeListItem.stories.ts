@@ -14,7 +14,7 @@ type Story = StoryObj<typeof RecipeListItem>
 export const レシピプレビュー: Story = {
   args: {
     recipe: {
-      index: 1,
+      id: "aaaaa",
       imagePath: "assets/images/sample-meal.png",
       linkUrl: "/recipe/1",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
@@ -26,7 +26,7 @@ export const レシピプレビュー: Story = {
 export const レシピプレビュー_長文: Story = {
   args: {
     recipe: {
-      index: 1,
+      id: "bbbbb",
       imagePath: "assets/images/sample-meal.png",
       linkUrl: "/recipe/1",
       title:

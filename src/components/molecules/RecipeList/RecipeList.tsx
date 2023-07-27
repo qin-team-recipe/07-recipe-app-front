@@ -1,11 +1,12 @@
-"use client"
-
 import { RecipeListItem } from "@/components/molecules/RecipeListItem/RecipeListItem"
 
-export const RecipeTab = () => {
+type RecipeListProps = {
+  horizontalScroll?: boolean
+}
+export const RecipeList = (props: RecipeListProps) => {
   const dummyData = [
     {
-      index: 1,
+      id: "11111",
       imagePath: "/assets/images/sample-meal.png",
       linkUrl: "",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
@@ -13,7 +14,7 @@ export const RecipeTab = () => {
       count: 1,
     },
     {
-      index: 2,
+      id: "2222222",
       imagePath: "/assets/images/sample-meal.png",
       linkUrl: "",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
@@ -21,7 +22,15 @@ export const RecipeTab = () => {
       count: 1,
     },
     {
-      index: 3,
+      id: "3333333",
+      imagePath: "/assets/images/sample-meal.png",
+      linkUrl: "",
+      title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
+      content: "ウルトラハイパー超すごいしまぶーシェフ",
+      count: 1,
+    },
+    {
+      id: "4444444",
       imagePath: "/assets/images/sample-meal.png",
       linkUrl: "",
       title: "トマトとルッコラのマルゲリータピザに合うホワイトソースグラタ",
@@ -31,11 +40,18 @@ export const RecipeTab = () => {
   ]
 
   return (
-    <div className="mx-4 my-5 grid w-[358px]  grid-cols-2 gap-x-3 gap-y-4 ">
+    <ul
+      className={
+        (props.horizontalScroll ? "flex flex-nowrap overflow-x-auto " : "flex flex-wrap") +
+        " max-w-[480px] gap-4  justify-between"
+      }
+    >
       {dummyData.map((v) => (
-        <RecipeListItem recipe={v} key={v.index}></RecipeListItem>
+        <li key={v.id} className="max-w-[173px] min-w-[173px]">
+          <RecipeListItem recipe={v} />
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
 
