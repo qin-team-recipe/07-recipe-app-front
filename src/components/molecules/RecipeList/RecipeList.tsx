@@ -40,14 +40,9 @@ export const RecipeList = (props: RecipeListProps) => {
   ]
 
   return (
-    <ul
-      className={
-        (props.horizontalScroll ? "flex flex-nowrap overflow-x-auto " : "flex flex-wrap justify-center ") +
-        "max-w-[480px] gap-3"
-      }
-    >
+    <ul className={props.horizontalScroll ? "flex flex-nowrap overflow-x-auto gap-3" : "flex flex-wrap gap-2"}>
       {dummyData.map((recipe) => (
-        <li key={recipe.id} className="min-w-[173px] max-w-[173px]">
+        <li key={recipe.id} className="w-[173px]">
           <RecipeListItem recipe={recipe} />
         </li>
       ))}
