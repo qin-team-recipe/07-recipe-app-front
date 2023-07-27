@@ -1,5 +1,5 @@
 /**
- * TabコンポーネントのStorybookの確認用
+ * TabsコンポーネントのStorybookの確認用
  */
 
 type Props = {

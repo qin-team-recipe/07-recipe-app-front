@@ -1,12 +1,12 @@
 "use client"
 
-import { useState, ReactNode } from "react"
+import { ReactNode, useState } from "react"
 
 type TabProps = {
   tabItems: { label: string; component: ReactNode }[]
 }
 
-export const Tab = ({ tabItems }: TabProps) => {
+export const Tabs = ({ tabItems }: TabProps) => {
   const [activeTab, setActiveTab] = useState<string>("item1")
 
   return (
