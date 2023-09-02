@@ -2,6 +2,7 @@ import { SearchBar } from "@/components/atoms/SearchBar/SearchBar"
 import { SectionTitle } from "@/components/atoms/SectionTitle/SectionTitle"
 import { LoadMoreButton } from "@/components/atoms/buttons/LoadMoreButton/LoadMoreButton"
 import { FeatureChefList } from "@/components/molecules/FeatureChefList/FeatureChefList"
+import { Navigation } from "@/components/molecules/Navigation/Navigation"
 import { OtherChefList } from "@/components/molecules/OtherChefList/OtherChefList"
 import { RecipeList } from "@/components/molecules/RecipeList/RecipeList"
 
@@ -32,6 +33,9 @@ export default function SearchPage() {
         <div className="col-span-2">
           <OtherChefList />
         </div>
+      </section>
+      <section>
+        <Navigation />
       </section>
     </>
   )
