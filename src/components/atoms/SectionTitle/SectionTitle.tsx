@@ -18,7 +18,7 @@ type HeadingType = typeof HEADING
 export interface SectionTitleProps {
   fontSize: FontSizeType[keyof FontSizeType]
   heading: HeadingType[keyof HeadingType]
-  text: string
+  text?: string
 }
 
 export const SectionTitle = ({ heading, text, fontSize }: SectionTitleProps) => {
