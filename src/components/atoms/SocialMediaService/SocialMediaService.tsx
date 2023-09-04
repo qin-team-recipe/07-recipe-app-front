@@ -66,7 +66,7 @@ const userSNS: UserSNS[] = [
 export const SocialMediaService = ({ platform }: SocialMediaServiceProps) => {
   const [isShow, setIsShow] = useState(false)
   return (
-    <div className="h-96">
+    <div className="">
       <div className="relative float-right flex gap-3">
         <Link href={userSNS[0].url}>
           <Image
@@ -97,7 +97,7 @@ export const SocialMediaService = ({ platform }: SocialMediaServiceProps) => {
           <Image src={`/assets/icons/social/other_icon.svg`} width={24} height={24} alt={`${platform}Icon`} />
           {isShow ? (
             <ul>
-              <li className=" border-1  text-Mauve-6 absolute  right-0 w-64 rounded-md border border-Mauve-06  shadow-md">
+              <li className=" border-1  text-Mauve-6 absolute  right-0 w-64 rounded-md border border-Mauve-06  bg-White shadow-md">
                 {userSNS.map((item, index) =>
                   index === 0 || index === 1 || item.platform === SOCIAL_TYPE["WEBSITE"] ? (
                     <></>
@@ -117,7 +117,7 @@ export const SocialMediaService = ({ platform }: SocialMediaServiceProps) => {
                   ),
                 )}
 
-                <li className="m-0 border-t-2 border-Mauve-06 p-0 ">
+                <li className="m-0 border-t-2 border-Mauve-06 bg-White p-0">
                   {userSNS.map((item, index) =>
                     item.platform === SOCIAL_TYPE["WEBSITE"] ? (
                       <div key={index} className="m-2">
