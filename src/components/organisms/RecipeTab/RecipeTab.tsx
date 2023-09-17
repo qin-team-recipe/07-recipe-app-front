@@ -8,7 +8,7 @@ type SectionTitleProps = {
 export const RecipeTab = (props: SectionTitleProps) => {
   return (
     <section>
-      <div className="mb-2 mt-5">
+      <div className="mb-2 mt-5 font-serif">
         <SectionTitle text={props.text} fontSize="xl" heading="h2" />
       </div>
       <RecipeList />
