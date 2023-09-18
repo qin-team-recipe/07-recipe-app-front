@@ -2,6 +2,7 @@ export const FONT_SIZE = {
   XXL: "2xl",
   XL: "xl",
   LG: "lg",
+  BASE: "base",
 } as const
 
 type FontSizeType = typeof FONT_SIZE
