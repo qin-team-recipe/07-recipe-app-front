@@ -12,7 +12,7 @@ export default function FavoriteLoginAfterPage() {
     <>
       <HeaderWithSettingButton title={"お気に入り"} />
       {/* <LoginTop type={"favorite"} /> */}
-      <section className="">
+      <section className="pt-5">
         <FavoriteChefList
           chefs={[
             {
@@ -70,7 +70,7 @@ export default function FavoriteLoginAfterPage() {
       </section>
       <section className="mb-10 mt-6 grid grid-cols-2 gap-4">
         <div className=" font-serif">
-          <SectionTitle text="話題のレシピ" fontSize="xl" heading="h1" />
+          <SectionTitle text="新着レシピ" fontSize="xl" heading="h1" />
         </div>
         <div className="flex justify-end">
           <LoadMoreButton url="/MoreSearchPage" />
