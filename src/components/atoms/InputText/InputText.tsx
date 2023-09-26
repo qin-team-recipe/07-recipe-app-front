@@ -17,7 +17,7 @@ export const InputText = ({ placeholder }: InputTextProps) => {
 
   return (
     <>
-      <div className="pb-5">
+      <div className="">
         <input
           type="text"
           className="w-full border-y-[1px]  border-solid border-Mauve-07 px-4 py-2  placeholder-Mauve-07 outline-none"
