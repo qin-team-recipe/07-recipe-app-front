@@ -6,7 +6,7 @@ import { MyPageDetail } from "@/components/molecules/MyPageDetail/MyPageDetail"
 import { RecipeTab } from "@/components/organisms/RecipeTab/RecipeTab"
 import { Tabs } from "@/components/organisms/Tabs/Tabs"
 
-export default function ChefPage() {
+export default function MyPage() {
   return (
     <>
       <section>
@@ -18,13 +18,13 @@ export default function ChefPage() {
           }
           // image="/assets/images/feature_chef.png"
           image="/assets/images/chef/small/7.png"
-          url={"/"}
+          url={"/ProfilePage"}
           recipeCount={123}
           followerCount={456}
         />
         <section className="mb-5">
           <Link
-            href={"/"}
+            href={"/ProfilePage"}
             className="inline-block h-6 w-full rounded border-[1px] border-solid border-Mauve-12 px-3  text-center text-sm text-Mauve-12"
           >
             プロフィールを編集
