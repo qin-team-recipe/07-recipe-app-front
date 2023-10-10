@@ -23,7 +23,7 @@ export const MyPageDetail = (props: MyPageDetailProps) => {
           <p className="mb-3 text-sm  text-Mauve-12">{props.id}</p>
         </div>
         <div className="float-right flex">
-          <CircleChef icon={props.image} name={""} url={"/"} />
+          <CircleChef icon={props.image} name={""} url={props.url} />
         </div>
       </div>
       <div>
