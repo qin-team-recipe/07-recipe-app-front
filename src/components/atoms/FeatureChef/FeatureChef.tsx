@@ -11,7 +11,7 @@ export const FeatureChef = (props: FeatureChefProps) => {
   return (
     <Link href={props.url} className="relative">
       <Image src={props.icon} width={140} height={150} alt="ChefIcon" className="rounded-2xl" />
-      <p className="absolute bottom-[11px] left-3 text-[20px] font-bold text-Mauve-01">{props.name}</p>
+      <p className="absolute bottom-[11px]  pl-2 pr-1  text-base font-bold text-Mauve-01">{props.name}</p>
     </Link>
   )
 }
