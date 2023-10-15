@@ -6,6 +6,8 @@
  * propsは受け取らないように実装し直しても良さそう
  */
 
+import Link from "next/link"
+
 interface FloatingButtonProps {
   onClick: () => void
 }
@@ -16,7 +18,7 @@ export const FloatingButton = ({ onClick }: FloatingButtonProps) => {
       className="fixed bottom-6 left-1/2 h-[48px] w-[200px] -translate-x-1/2 rounded-full bg-Tomato-09 text-base font-bold text-Mauve-01 shadow-md"
       onClick={onClick}
     >
-      マイレシピを追加する
+      <Link href={"/RecipeDetailsPage"}>マイレシピを追加する</Link>
     </button>
   )
 }
