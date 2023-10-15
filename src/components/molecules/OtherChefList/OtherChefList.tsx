@@ -11,25 +11,26 @@ type ChefCardProps = {
 export const OtherChefList = () => {
   const dummyData: ChefCardProps[] = [
     {
-      id: "aaa",
-      image: "/assets/images/other_chef.png",
-      name: "山田シェフ",
-      profile: "白ごはん.comを運営しています。",
-      url: "/",
-      count: 123,
-    },
-    {
-      id: "bbb",
-      image: "/assets/images/other_chef.png",
-      name: "山田シェフ",
+      id: "hifumi",
+      image: "/assets/images/chef/Medium/2.png",
+      name: "ひふみシェフ",
       profile:
         "白ごはん.comを運営しています。アップしたレシピの紹介や、youtube動画、日々の食のこと、オリジナル商品などの案内等をブログでやっています。",
       url: "/",
       count: 123,
     },
     {
-      id: "ccc",
-      image: "/assets/images/other_chef.png",
+      id: "shimabu",
+      image: "/assets/images/chef/Medium/1.png",
+      name: "しまぶーシェフ",
+      profile:
+        "白ごはん.comを運営しています。アップしたレシピの紹介や、youtube動画、日々の食のこと、オリジナル商品などの案内等をブログでやっています。",
+      url: "/",
+      count: 123,
+    },
+    {
+      id: "yamada",
+      image: "/assets/images/chef/Medium/3.png",
       name: "山田シェフ",
       profile:
         "白ごはん.comを運営しています。アップしたレシピの紹介や、youtube動画、日々の食のこと、オリジナル商品などの案内等をブログでやっています。",
