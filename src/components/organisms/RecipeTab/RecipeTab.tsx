@@ -2,7 +2,7 @@ import { SectionTitle } from "@/components/atoms/SectionTitle/SectionTitle"
 import { RecipeList } from "@/components/molecules/RecipeList/RecipeList"
 
 type SectionTitleProps = {
-  text: string
+  text?: string
 }
 
 export const RecipeTab = (props: SectionTitleProps) => {
